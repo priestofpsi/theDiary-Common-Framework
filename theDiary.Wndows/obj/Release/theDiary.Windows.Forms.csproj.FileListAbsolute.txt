@@ -1,0 +1,9 @@
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Wndows\obj\Release\theDiary.Windows.Forms.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Wndows\obj\Release\Seth.Windows.Forms.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Wndows\obj\Release\theDiary.Windows.Forms.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Wndows\obj\Release\Seth.Windows.Forms.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Wndows\bin\Release\Seth.Windows.Forms.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Wndows\bin\Release\Seth.Windows.Forms.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Wndows\bin\Release\theDiary.System.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Wndows\bin\Release\theDiary.System.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Wndows\obj\Release\Seth.Windows.Forms.pdb

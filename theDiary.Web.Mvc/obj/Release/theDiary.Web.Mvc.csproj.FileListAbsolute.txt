@@ -1,0 +1,51 @@
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\obj\Release\theDiary.Web.Mvc.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\Newtonsoft.Json.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\theDiary.System.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\theDiary.System.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\Antlr3.Runtime.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\HtmlAgilityPack.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\HtmlAgilityPack.xml
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\Microsoft.Web.Infrastructure.xml
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\theDiary.Web.Mvc.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\theDiary.Web.Mvc.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\theDiary.Web.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\bin\Release\theDiary.Web.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\obj\Release\theDiary.Web.Mvc.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web.Mvc\obj\Release\theDiary.Web.Mvc.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\theDiary.Web.Mvc.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\theDiary.Web.Mvc.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\Newtonsoft.Json.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.Http.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.Mvc.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.WebPages.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\theDiary.System.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\theDiary.Web.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Net.Http.Formatting.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.Razor.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.WebPages.Razor.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\theDiary.System.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\theDiary.Web.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.Http.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.Mvc.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.WebPages.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Net.Http.Formatting.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.Razor.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.WebPages.Razor.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\obj\Release\theDiary.Web.Mvc.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\obj\Release\theDiary.Web.Mvc.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\obj\Release\theDiary.Web.Mvc.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\theDiary.Web.Mvc.dll.config
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\Antlr3.Runtime.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\HtmlAgilityPack.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Linq.Dynamic.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.Helpers.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\WebGrease.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\Antlr3.Runtime.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\HtmlAgilityPack.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\HtmlAgilityPack.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\Newtonsoft.Json.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web.Mvc\bin\Release\System.Web.Helpers.xml

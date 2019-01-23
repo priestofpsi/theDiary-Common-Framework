@@ -1,0 +1,15 @@
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web\bin\Release\theDiary.Web.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web\bin\Release\theDiary.Web.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web\bin\Release\theDiary.System.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web\bin\Release\theDiary.System.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web\obj\Release\theDiary.Web.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web\obj\Release\theDiary.Web.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Web\obj\Release\theDiary.Web.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web\bin\Release\theDiary.Web.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web\bin\Release\theDiary.Web.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web\bin\Release\theDiary.System.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web\bin\Release\theDiary.System.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web\obj\Release\theDiary.Web.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web\obj\Release\theDiary.Web.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web\obj\Release\theDiary.Web.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Web\bin\Release\theDiary.Web.dll.config

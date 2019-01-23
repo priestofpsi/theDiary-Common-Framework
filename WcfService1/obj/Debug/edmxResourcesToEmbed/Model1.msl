@@ -1,0 +1,1073 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WahlModelStoreContainer" CdmEntityContainer="WahlEntities">
+    <EntitySetMapping Name="Account">
+      <EntityTypeMapping TypeName="WahlModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alloy">
+      <EntityTypeMapping TypeName="WahlModel.Alloy">
+        <MappingFragment StoreEntitySet="Alloy">
+          <ScalarProperty Name="AlloyID" ColumnName="AlloyID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="SandWeight" ColumnName="SandWeight" />
+          <ScalarProperty Name="WeightOnHand" ColumnName="WeightOnHand" />
+          <ScalarProperty Name="Unitonhand" ColumnName="Unitonhand" />
+          <ScalarProperty Name="Runnerweight" ColumnName="Runnerweight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Casting">
+      <EntityTypeMapping TypeName="WahlModel.Casting">
+        <MappingFragment StoreEntitySet="Casting">
+          <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="DieOwnership" ColumnName="DieOwnership" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="FettlerStandard" ColumnName="FettlerStandard" />
+          <ScalarProperty Name="Cavity" ColumnName="Cavity" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="RunnerWeight" ColumnName="RunnerWeight" />
+          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+          <ScalarProperty Name="Sandblasting" ColumnName="Sandblasting" />
+          <ScalarProperty Name="CoreMaking" ColumnName="CoreMaking" />
+          <ScalarProperty Name="CoreRemoval" ColumnName="CoreRemoval" />
+          <ScalarProperty Name="WeightCore" ColumnName="WeightCore" />
+          <ScalarProperty Name="NumberOfCasters" ColumnName="NumberOfCasters" />
+          <ScalarProperty Name="PrefferedTable" ColumnName="PrefferedTable" />
+          <ScalarProperty Name="PrefferedFurnace" ColumnName="PrefferedFurnace" />
+          <ScalarProperty Name="PrefferedCaster1" ColumnName="PrefferedCaster1" />
+          <ScalarProperty Name="PrefferedCaster2" ColumnName="PrefferedCaster2" />
+          <ScalarProperty Name="PrefferedCaster3" ColumnName="PrefferedCaster3" />
+          <ScalarProperty Name="DieID" ColumnName="DieID" />
+          <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+          <ScalarProperty Name="SandCost" ColumnName="SandCost" />
+          <ScalarProperty Name="GlueCost" ColumnName="GlueCost" />
+          <ScalarProperty Name="CoreMakerCost" ColumnName="CoreMakerCost" />
+          <ScalarProperty Name="CoreRemoverCost" ColumnName="CoreRemoverCost" />
+          <ScalarProperty Name="SandUsed" ColumnName="SandUsed" />
+          <ScalarProperty Name="GlueUsed" ColumnName="GlueUsed" />
+          <ScalarProperty Name="TotalSandCost" ColumnName="TotalSandCost" />
+          <ScalarProperty Name="DrillingCost" ColumnName="DrillingCost" />
+          <ScalarProperty Name="TappingCost" ColumnName="TappingCost" />
+          <ScalarProperty Name="TurningCost" ColumnName="TurningCost" />
+          <ScalarProperty Name="MillingCost" ColumnName="MillingCost" />
+          <ScalarProperty Name="ThreadingCost" ColumnName="ThreadingCost" />
+          <ScalarProperty Name="TotalMachineryCost" ColumnName="TotalMachineryCost" />
+          <ScalarProperty Name="InventoryUnitsOnHand" ColumnName="InventoryUnitsOnHand" />
+          <ScalarProperty Name="InventoryUnitsOnHandWithRunners" ColumnName="InventoryUnitsOnHandWithRunners" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CastingCodedelete">
+      <EntityTypeMapping TypeName="WahlModel.CastingCodedelete">
+        <MappingFragment StoreEntitySet="CastingCodedelete">
+          <ScalarProperty Name="CastingCodeID" ColumnName="CastingCodeID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Company">
+      <EntityTypeMapping TypeName="WahlModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Consumable">
+      <EntityTypeMapping TypeName="WahlModel.Consumable">
+        <MappingFragment StoreEntitySet="Consumable">
+          <ScalarProperty Name="ConsumableID" ColumnName="ConsumableID" />
+          <ScalarProperty Name="MaterialType" ColumnName="MaterialType" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CreditNote">
+      <EntityTypeMapping TypeName="WahlModel.CreditNote">
+        <MappingFragment StoreEntitySet="CreditNote">
+          <ScalarProperty Name="CreditNoteID" ColumnName="CreditNoteID" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="ReturnToSupplierID" ColumnName="ReturnToSupplierID" />
+          <ScalarProperty Name="TotalQuantity" ColumnName="TotalQuantity" />
+          <ScalarProperty Name="TotalWeight" ColumnName="TotalWeight" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CreditNoteLineItem">
+      <EntityTypeMapping TypeName="WahlModel.CreditNoteLineItem">
+        <MappingFragment StoreEntitySet="CreditNoteLineItem">
+          <ScalarProperty Name="CreditNoteLineItem1" ColumnName="CreditNoteLineItem" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="TotalWeight" ColumnName="TotalWeight" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DailyProductionPerformance">
+      <EntityTypeMapping TypeName="WahlModel.DailyProductionPerformance">
+        <MappingFragment StoreEntitySet="DailyProductionPerformance">
+          <ScalarProperty Name="DailProductionPerformanceID" ColumnName="DailProductionPerformanceID" />
+          <ScalarProperty Name="ShiftNo" ColumnName="ShiftNo" />
+          <ScalarProperty Name="ShiftDate" ColumnName="ShiftDate" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Pot" ColumnName="Pot" />
+          <ScalarProperty Name="PerformancePercentage" ColumnName="PerformancePercentage" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Total9" ColumnName="Total9" />
+          <ScalarProperty Name="Scrap9" ColumnName="Scrap9" />
+          <ScalarProperty Name="Total11" ColumnName="Total11" />
+          <ScalarProperty Name="Scrap11" ColumnName="Scrap11" />
+          <ScalarProperty Name="Total13" ColumnName="Total13" />
+          <ScalarProperty Name="Scrap13" ColumnName="Scrap13" />
+          <ScalarProperty Name="Total15" ColumnName="Total15" />
+          <ScalarProperty Name="Scrap15" ColumnName="Scrap15" />
+          <ScalarProperty Name="Total16" ColumnName="Total16" />
+          <ScalarProperty Name="Scrap16" ColumnName="Scrap16" />
+          <ScalarProperty Name="TotalTotal" ColumnName="TotalTotal" />
+          <ScalarProperty Name="TotalScrap" ColumnName="TotalScrap" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ScrapFettling" ColumnName="ScrapFettling" />
+          <ScalarProperty Name="ScrapDrillingAndT" ColumnName="ScrapDrillingAndT" />
+          <ScalarProperty Name="ScrapQCBefore" ColumnName="ScrapQCBefore" />
+          <ScalarProperty Name="ScrapQCMandla" ColumnName="ScrapQCMandla" />
+          <ScalarProperty Name="CastingWeight" ColumnName="CastingWeight" />
+          <ScalarProperty Name="TotalWeight" ColumnName="TotalWeight" />
+          <ScalarProperty Name="ScrapManufacturing" ColumnName="ScrapManufacturing" />
+          <ScalarProperty Name="ShiftTypeModifier" ColumnName="ShiftTypeModifier" />
+          <ScalarProperty Name="ShiftTypeId" ColumnName="ShiftTypeId" />
+          <ScalarProperty Name="AdjustedStandard" ColumnName="AdjustedStandard" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Day">
+      <EntityTypeMapping TypeName="WahlModel.Day">
+        <MappingFragment StoreEntitySet="Day">
+          <ScalarProperty Name="DayID" ColumnName="DayID" />
+          <ScalarProperty Name="Day1" ColumnName="Day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryNote">
+      <EntityTypeMapping TypeName="WahlModel.DeliveryNote">
+        <MappingFragment StoreEntitySet="DeliveryNote">
+          <ScalarProperty Name="DeliveryNoteID" ColumnName="DeliveryNoteID" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="SupplierInvoiceNo" ColumnName="SupplierInvoiceNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryNoteLineItem">
+      <EntityTypeMapping TypeName="WahlModel.DeliveryNoteLineItem">
+        <MappingFragment StoreEntitySet="DeliveryNoteLineItem">
+          <ScalarProperty Name="DeliveryNoteLineItemID" ColumnName="DeliveryNoteLineItemID" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Die">
+      <EntityTypeMapping TypeName="WahlModel.Die">
+        <MappingFragment StoreEntitySet="Die">
+          <ScalarProperty Name="DieID" ColumnName="DieID" />
+          <ScalarProperty Name="InvID" ColumnName="InvID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="SandWeight" ColumnName="SandWeight" />
+          <ScalarProperty Name="Weightonhand" ColumnName="Weightonhand" />
+          <ScalarProperty Name="Unitonhand" ColumnName="Unitonhand" />
+          <ScalarProperty Name="Runnerweight" ColumnName="Runnerweight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DieOwnership">
+      <EntityTypeMapping TypeName="WahlModel.DieOwnership">
+        <MappingFragment StoreEntitySet="DieOwnership">
+          <ScalarProperty Name="DieOwnershipID" ColumnName="DieOwnershipID" />
+          <ScalarProperty Name="DieOwnershipDescription" ColumnName="DieOwnershipDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="WahlModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="IDNumber" ColumnName="IDNumber" />
+          <ScalarProperty Name="ClockNo" ColumnName="ClockNo" />
+          <ScalarProperty Name="TeamLeader" ColumnName="TeamLeader" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExternalCustomer">
+      <EntityTypeMapping TypeName="WahlModel.ExternalCustomer">
+        <MappingFragment StoreEntitySet="ExternalCustomer">
+          <ScalarProperty Name="ExternalCustomerID" ColumnName="ExternalCustomerID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventory">
+      <EntityTypeMapping TypeName="WahlModel.Inventory">
+        <MappingFragment StoreEntitySet="Inventory">
+          <ScalarProperty Name="InventoryID" ColumnName="InventoryID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryGroup">
+      <EntityTypeMapping TypeName="WahlModel.InventoryGroup">
+        <MappingFragment StoreEntitySet="InventoryGroup">
+          <ScalarProperty Name="InventoryGroupID" ColumnName="InventoryGroupID" />
+          <ScalarProperty Name="InventoryGroupDescription" ColumnName="InventoryGroupDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryType">
+      <EntityTypeMapping TypeName="WahlModel.InventoryType">
+        <MappingFragment StoreEntitySet="InventoryType">
+          <ScalarProperty Name="InventoryTypeID" ColumnName="InventoryTypeID" />
+          <ScalarProperty Name="InventoryTypeDescription" ColumnName="InventoryTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoice">
+      <EntityTypeMapping TypeName="WahlModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="InventoryID" ColumnName="InventoryID" />
+          <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="CheckedByOfficer" ColumnName="CheckedByOfficer" />
+          <ScalarProperty Name="CheckedDate" ColumnName="CheckedDate" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="ReceivedDate" ColumnName="ReceivedDate" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="SupplierInvoiceNumber" ColumnName="SupplierInvoiceNumber" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="TotalNet" ColumnName="TotalNet" />
+          <ScalarProperty Name="VatNo" ColumnName="VatNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceLineItem">
+      <EntityTypeMapping TypeName="WahlModel.InvoiceLineItem">
+        <MappingFragment StoreEntitySet="InvoiceLineItem">
+          <ScalarProperty Name="InvoiceLineItemID" ColumnName="InvoiceLineItemID" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="TotalWeight" ColumnName="TotalWeight" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="WahlModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="MenuOrder" ColumnName="MenuOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Month">
+      <EntityTypeMapping TypeName="WahlModel.Month">
+        <MappingFragment StoreEntitySet="Month">
+          <ScalarProperty Name="MonthNumber" ColumnName="MonthNumber" />
+          <ScalarProperty Name="Month1" ColumnName="Month" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthlyAlloyCost">
+      <EntityTypeMapping TypeName="WahlModel.MonthlyAlloyCost">
+        <MappingFragment StoreEntitySet="MonthlyAlloyCost">
+          <ScalarProperty Name="MonthlyAlloyCostID" ColumnName="MonthlyAlloyCostID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
+          <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthlyExpense">
+      <EntityTypeMapping TypeName="WahlModel.MonthlyExpense">
+        <MappingFragment StoreEntitySet="MonthlyExpense">
+          <ScalarProperty Name="MonthlyExpensesID" ColumnName="MonthlyExpensesID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="TotalGas" ColumnName="TotalGas" />
+          <ScalarProperty Name="TotalElectricity" ColumnName="TotalElectricity" />
+          <ScalarProperty Name="TotalWater" ColumnName="TotalWater" />
+          <ScalarProperty Name="MachineryService" ColumnName="MachineryService" />
+          <ScalarProperty Name="Labour" ColumnName="Labour" />
+          <ScalarProperty Name="SafetyClothing" ColumnName="SafetyClothing" />
+          <ScalarProperty Name="TotalStandardMonthlyCosts" ColumnName="TotalStandardMonthlyCosts" />
+          <ScalarProperty Name="CastingStdPercentagePerDay" ColumnName="CastingStdPercentagePerDay" />
+          <ScalarProperty Name="CasterPerDay" ColumnName="CasterPerDay" />
+          <ScalarProperty Name="FettlerPerDay" ColumnName="FettlerPerDay" />
+          <ScalarProperty Name="SandBlasterPerDay" ColumnName="SandBlasterPerDay" />
+          <ScalarProperty Name="SandCoreMakerPerDay" ColumnName="SandCoreMakerPerDay" />
+          <ScalarProperty Name="SandCoreRemoverPerDay" ColumnName="SandCoreRemoverPerDay" />
+          <ScalarProperty Name="GeneralExpenses" ColumnName="GeneralExpenses" />
+          <ScalarProperty Name="TotalLabourCosts" ColumnName="TotalLabourCosts" />
+          <ScalarProperty Name="MetalLM4PerKg" ColumnName="MetalLM4PerKg" />
+          <ScalarProperty Name="MetalLM6PerKg" ColumnName="MetalLM6PerKg" />
+          <ScalarProperty Name="MetalLM9PerKg" ColumnName="MetalLM9PerKg" />
+          <ScalarProperty Name="MetalLM25PerKg" ColumnName="MetalLM25PerKg" />
+          <ScalarProperty Name="MetalZincPerKg" ColumnName="MetalZincPerKg" />
+          <ScalarProperty Name="CostOfSandPerKg" ColumnName="CostOfSandPerKg" />
+          <ScalarProperty Name="GasAt" ColumnName="GasAt" />
+          <ScalarProperty Name="ElectricityAt" ColumnName="ElectricityAt" />
+          <ScalarProperty Name="StartingDate" ColumnName="StartingDate" />
+          <ScalarProperty Name="EndingDate" ColumnName="EndingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrder">
+      <EntityTypeMapping TypeName="WahlModel.PurchaseOrder">
+        <MappingFragment StoreEntitySet="PurchaseOrder">
+          <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="TaxRegistrationNumber" ColumnName="TaxRegistrationNumber" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="From" ColumnName="From" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ExternalReference" ColumnName="ExternalReference" />
+          <ScalarProperty Name="OrderPlacedBy" ColumnName="OrderPlacedBy" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="DateReceived" ColumnName="DateReceived" />
+          <ScalarProperty Name="Signed" ColumnName="Signed" />
+          <ScalarProperty Name="TotalExcl" ColumnName="TotalExcl" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="TotalIncl" ColumnName="TotalIncl" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="GrandTotal" ColumnName="GrandTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrderLineItems">
+      <EntityTypeMapping TypeName="WahlModel.PurchaseOrderLineItems">
+        <MappingFragment StoreEntitySet="PurchaseOrderLineItems">
+          <ScalarProperty Name="PurchaseOrderLineItemID" ColumnName="PurchaseOrderLineItemID" />
+          <ScalarProperty Name="Ordered" ColumnName="Ordered" />
+          <ScalarProperty Name="QuantityUnit" ColumnName="QuantityUnit" />
+          <ScalarProperty Name="PriceExDiscount" ColumnName="PriceExDiscount" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="TotalExcl" ColumnName="TotalExcl" />
+          <ScalarProperty Name="TotalIncl" ColumnName="TotalIncl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Quotation">
+      <EntityTypeMapping TypeName="WahlModel.Quotation">
+        <MappingFragment StoreEntitySet="Quotation">
+          <ScalarProperty Name="QuotationID" ColumnName="QuotationID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Cavities" ColumnName="Cavities" />
+          <ScalarProperty Name="RunnerWeight" ColumnName="RunnerWeight" />
+          <ScalarProperty Name="MetalContent" ColumnName="MetalContent" />
+          <ScalarProperty Name="MetalPrice" ColumnName="MetalPrice" />
+          <ScalarProperty Name="MetalTotal" ColumnName="MetalTotal" />
+          <ScalarProperty Name="Electricity" ColumnName="Electricity" />
+          <ScalarProperty Name="ElectricityTotal" ColumnName="ElectricityTotal" />
+          <ScalarProperty Name="Gas" ColumnName="Gas" />
+          <ScalarProperty Name="GasTotal" ColumnName="GasTotal" />
+          <ScalarProperty Name="GeneralExpenses" ColumnName="GeneralExpenses" />
+          <ScalarProperty Name="GeneralExpensesCastingCount" ColumnName="GeneralExpensesCastingCount" />
+          <ScalarProperty Name="GeneralExpensesTotal" ColumnName="GeneralExpensesTotal" />
+          <ScalarProperty Name="Caster" ColumnName="Caster" />
+          <ScalarProperty Name="CasterCastingCount" ColumnName="CasterCastingCount" />
+          <ScalarProperty Name="CasterTotal" ColumnName="CasterTotal" />
+          <ScalarProperty Name="Fettler" ColumnName="Fettler" />
+          <ScalarProperty Name="FettlerCastingCount" ColumnName="FettlerCastingCount" />
+          <ScalarProperty Name="FettlerTotal" ColumnName="FettlerTotal" />
+          <ScalarProperty Name="TotalCastingCost" ColumnName="TotalCastingCost" />
+          <ScalarProperty Name="Drilling" ColumnName="Drilling" />
+          <ScalarProperty Name="Tapping" ColumnName="Tapping" />
+          <ScalarProperty Name="Turning" ColumnName="Turning" />
+          <ScalarProperty Name="Milling" ColumnName="Milling" />
+          <ScalarProperty Name="Threading" ColumnName="Threading" />
+          <ScalarProperty Name="TotalMachineryCost" ColumnName="TotalMachineryCost" />
+          <ScalarProperty Name="Sandblasting" ColumnName="Sandblasting" />
+          <ScalarProperty Name="SandblastingCastingCount" ColumnName="SandblastingCastingCount" />
+          <ScalarProperty Name="SandblastingTotal" ColumnName="SandblastingTotal" />
+          <ScalarProperty Name="CoreMaker" ColumnName="CoreMaker" />
+          <ScalarProperty Name="CoreMakerCoreCount" ColumnName="CoreMakerCoreCount" />
+          <ScalarProperty Name="CoreMakerTotal" ColumnName="CoreMakerTotal" />
+          <ScalarProperty Name="CoreRemover" ColumnName="CoreRemover" />
+          <ScalarProperty Name="CoreRemoverCastingCount" ColumnName="CoreRemoverCastingCount" />
+          <ScalarProperty Name="CoreRemoverTotal" ColumnName="CoreRemoverTotal" />
+          <ScalarProperty Name="SandUsed" ColumnName="SandUsed" />
+          <ScalarProperty Name="SandPrice" ColumnName="SandPrice" />
+          <ScalarProperty Name="SandTotal" ColumnName="SandTotal" />
+          <ScalarProperty Name="TotalSandCost" ColumnName="TotalSandCost" />
+          <ScalarProperty Name="CurrentPrice" ColumnName="CurrentPrice" />
+          <ScalarProperty Name="PercentageDifference" ColumnName="PercentageDifference" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="StandardPercentage" ColumnName="StandardPercentage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReturnToSupplier">
+      <EntityTypeMapping TypeName="WahlModel.ReturnToSupplier">
+        <MappingFragment StoreEntitySet="ReturnToSupplier">
+          <ScalarProperty Name="ReturnToSupplierID" ColumnName="ReturnToSupplierID" />
+          <ScalarProperty Name="ExternalCustomerID" ColumnName="ExternalCustomerID" />
+          <ScalarProperty Name="InternalCustomerID" ColumnName="InternalCustomerID" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolePermission">
+      <EntityTypeMapping TypeName="WahlModel.RolePermission">
+        <MappingFragment StoreEntitySet="RolePermission">
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="Allowed" ColumnName="Allowed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="WahlModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sample">
+      <EntityTypeMapping TypeName="WahlModel.Sample">
+        <MappingFragment StoreEntitySet="Sample">
+          <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+          <ScalarProperty Name="InvID" ColumnName="InvID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="SandWeight" ColumnName="SandWeight" />
+          <ScalarProperty Name="Weightonhand" ColumnName="Weightonhand" />
+          <ScalarProperty Name="Unitonhand" ColumnName="Unitonhand" />
+          <ScalarProperty Name="Runnerweight" ColumnName="Runnerweight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchField">
+      <EntityTypeMapping TypeName="WahlModel.SearchField">
+        <MappingFragment StoreEntitySet="SearchField">
+          <ScalarProperty Name="SearchFieldId" ColumnName="SearchFieldId" />
+          <ScalarProperty Name="SearchTypeId" ColumnName="SearchTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchType">
+      <EntityTypeMapping TypeName="WahlModel.SearchType">
+        <MappingFragment StoreEntitySet="SearchType">
+          <ScalarProperty Name="SearchTypeId" ColumnName="SearchTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialCasting">
+      <EntityTypeMapping TypeName="WahlModel.SpecialCasting">
+        <MappingFragment StoreEntitySet="SpecialCasting">
+          <ScalarProperty Name="SpecialCastingId" ColumnName="SpecialCastingId" />
+          <ScalarProperty Name="OldCastingID" ColumnName="OldCastingID" />
+          <ScalarProperty Name="SandCasting" ColumnName="SandCasting" />
+          <ScalarProperty Name="SandCore" ColumnName="SandCore" />
+          <ScalarProperty Name="SandBlasted" ColumnName="SandBlasted" />
+          <ScalarProperty Name="BrassInsert" ColumnName="BrassInsert" />
+          <ScalarProperty Name="AluminiumInsert" ColumnName="AluminiumInsert" />
+          <ScalarProperty Name="StainlessSteelInsert" ColumnName="StainlessSteelInsert" />
+          <ScalarProperty Name="Hydraulics" ColumnName="Hydraulics" />
+          <ScalarProperty Name="HeatTreated" ColumnName="HeatTreated" />
+          <ScalarProperty Name="SandCup" ColumnName="SandCup" />
+          <ScalarProperty Name="CupsFixed" ColumnName="CupsFixed" />
+          <ScalarProperty Name="CupsLoose" ColumnName="CupsLoose" />
+          <ScalarProperty Name="Cores" ColumnName="Cores" />
+          <ScalarProperty Name="CoresCollapsible" ColumnName="CoresCollapsible" />
+          <ScalarProperty Name="BaseLoose" ColumnName="BaseLoose" />
+          <ScalarProperty Name="BaseFixed" ColumnName="BaseFixed" />
+          <ScalarProperty Name="DiePieces" ColumnName="DiePieces" />
+          <ScalarProperty Name="KnockOutPins" ColumnName="KnockOutPins" />
+          <ScalarProperty Name="Pins" ColumnName="Pins" />
+          <ScalarProperty Name="Wedges" ColumnName="Wedges" />
+          <ScalarProperty Name="Slides" ColumnName="Slides" />
+          <ScalarProperty Name="ClampsQty" ColumnName="ClampsQty" />
+          <ScalarProperty Name="ClampsSize" ColumnName="ClampsSize" />
+          <ScalarProperty Name="HammersQty" ColumnName="HammersQty" />
+          <ScalarProperty Name="HammersSize" ColumnName="HammersSize" />
+          <ScalarProperty Name="PryeBarsQty" ColumnName="PryeBarsQty" />
+          <ScalarProperty Name="PryeBarsSize" ColumnName="PryeBarsSize" />
+          <ScalarProperty Name="Forks" ColumnName="Forks" />
+          <ScalarProperty Name="Hooks" ColumnName="Hooks" />
+          <ScalarProperty Name="Runners" ColumnName="Runners" />
+          <ScalarProperty Name="Water" ColumnName="Water" />
+          <ScalarProperty Name="AirGuns" ColumnName="AirGuns" />
+          <ScalarProperty Name="Pliers" ColumnName="Pliers" />
+          <ScalarProperty Name="DieCoat34Used" ColumnName="DieCoat34Used" />
+          <ScalarProperty Name="DieCoat34Where" ColumnName="DieCoat34Where" />
+          <ScalarProperty Name="DieCoat39Used" ColumnName="DieCoat39Used" />
+          <ScalarProperty Name="DieCoat39Where" ColumnName="DieCoat39Where" />
+          <ScalarProperty Name="DieCoat140Used" ColumnName="DieCoat140Used" />
+          <ScalarProperty Name="DieCoat140Where" ColumnName="DieCoat140Where" />
+          <ScalarProperty Name="DieCoat11Used" ColumnName="DieCoat11Used" />
+          <ScalarProperty Name="DieCoat11Where" ColumnName="DieCoat11Where" />
+          <ScalarProperty Name="LubixOilUsed" ColumnName="LubixOilUsed" />
+          <ScalarProperty Name="LubixOilWhere" ColumnName="LubixOilWhere" />
+          <ScalarProperty Name="OtherUsed" ColumnName="OtherUsed" />
+          <ScalarProperty Name="OtherWhere" ColumnName="OtherWhere" />
+          <ScalarProperty Name="CastingInstructions" ColumnName="CastingInstructions" />
+          <ScalarProperty Name="HeatingInstructions" ColumnName="HeatingInstructions" />
+          <ScalarProperty Name="SprayingInstructions" ColumnName="SprayingInstructions" />
+          <ScalarProperty Name="OtherInstructions" ColumnName="OtherInstructions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockTake">
+      <EntityTypeMapping TypeName="WahlModel.StockTake">
+        <MappingFragment StoreEntitySet="StockTake">
+          <ScalarProperty Name="StockTakeID" ColumnName="StockTakeID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Finalized" ColumnName="Finalized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockTakeLineItem">
+      <EntityTypeMapping TypeName="WahlModel.StockTakeLineItem">
+        <MappingFragment StoreEntitySet="StockTakeLineItem">
+          <ScalarProperty Name="StockTakeLineItemID" ColumnName="StockTakeLineItemID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="WithRunners" ColumnName="WithRunners" />
+          <ScalarProperty Name="IsCasting" ColumnName="IsCasting" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockTakeVarianceLineItem">
+      <EntityTypeMapping TypeName="WahlModel.StockTakeVarianceLineItem">
+        <MappingFragment StoreEntitySet="StockTakeVarianceLineItem">
+          <ScalarProperty Name="StockTakeVarianceLineItemID" ColumnName="StockTakeVarianceLineItemID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="WithRunners" ColumnName="WithRunners" />
+          <ScalarProperty Name="IsCasting" ColumnName="IsCasting" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="WahlModel.Suppliers">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="TelephoneNumber" ColumnName="TelephoneNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="AddressLine4" ColumnName="AddressLine4" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="VatNumber" ColumnName="VatNumber" />
+          <ScalarProperty Name="SupplierTypeId" ColumnName="SupplierTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplierType">
+      <EntityTypeMapping TypeName="WahlModel.SupplierType">
+        <MappingFragment StoreEntitySet="SupplierType">
+          <ScalarProperty Name="SupplierTypeId" ColumnName="SupplierTypeId" />
+          <ScalarProperty Name="SupplierType1" ColumnName="SupplierType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="WahlModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="temp_DataSource">
+      <EntityTypeMapping TypeName="WahlModel.temp_DataSource">
+        <MappingFragment StoreEntitySet="temp_DataSource">
+          <ScalarProperty Name="DSID" ColumnName="DSID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="SubscriptionID" ColumnName="SubscriptionID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="CredentialRetrieval" ColumnName="CredentialRetrieval" />
+          <ScalarProperty Name="Prompt" ColumnName="Prompt" />
+          <ScalarProperty Name="ConnectionString" ColumnName="ConnectionString" />
+          <ScalarProperty Name="OriginalConnectionString" ColumnName="OriginalConnectionString" />
+          <ScalarProperty Name="OriginalConnectStringExpressionBased" ColumnName="OriginalConnectStringExpressionBased" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Flags" ColumnName="Flags" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="temp_Reports">
+      <EntityTypeMapping TypeName="WahlModel.temp_Reports">
+        <MappingFragment StoreEntitySet="temp_Reports">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Intermediate" ColumnName="Intermediate" />
+          <ScalarProperty Name="SnapshotDataID" ColumnName="SnapshotDataID" />
+          <ScalarProperty Name="LinkSourceID" ColumnName="LinkSourceID" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Hidden" ColumnName="Hidden" />
+          <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedByID" ColumnName="ModifiedByID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="MimeType" ColumnName="MimeType" />
+          <ScalarProperty Name="SnapshotLimit" ColumnName="SnapshotLimit" />
+          <ScalarProperty Name="Parameter" ColumnName="Parameter" />
+          <ScalarProperty Name="PolicyID" ColumnName="PolicyID" />
+          <ScalarProperty Name="PolicyRoot" ColumnName="PolicyRoot" />
+          <ScalarProperty Name="ExecutionFlag" ColumnName="ExecutionFlag" />
+          <ScalarProperty Name="ExecutionTime" ColumnName="ExecutionTime" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+          <ScalarProperty Name="ComponentID" ColumnName="ComponentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="WahlModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WeeklyPlan">
+      <EntityTypeMapping TypeName="WahlModel.WeeklyPlan">
+        <MappingFragment StoreEntitySet="WeeklyPlan">
+          <ScalarProperty Name="WeeklyPlanID" ColumnName="WeeklyPlanID" />
+          <ScalarProperty Name="CaptureDate" ColumnName="CaptureDate" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Year">
+      <EntityTypeMapping TypeName="WahlModel.Year">
+        <MappingFragment StoreEntitySet="Year">
+          <ScalarProperty Name="YearID" ColumnName="YearID" />
+          <ScalarProperty Name="Year1" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_PurchaseOrder_Account" TypeName="WahlModel.FK_PurchaseOrder_Account" StoreEntitySet="PurchaseOrder">
+      <EndProperty Name="Account">
+        <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+      </EndProperty>
+      <EndProperty Name="PurchaseOrder">
+        <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+      </EndProperty>
+      <Condition ColumnName="AccountID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Casting_Alloy" TypeName="WahlModel.FK_Casting_Alloy" StoreEntitySet="Casting">
+      <EndProperty Name="Alloy">
+        <ScalarProperty Name="AlloyID" ColumnName="AlloyID" />
+      </EndProperty>
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+      </EndProperty>
+      <Condition ColumnName="AlloyID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_DeliveryNoteLineItem_Alloy" TypeName="WahlModel.FK_DeliveryNoteLineItem_Alloy" StoreEntitySet="DeliveryNoteLineItem">
+      <EndProperty Name="Alloy">
+        <ScalarProperty Name="AlloyID" ColumnName="AlloyID" />
+      </EndProperty>
+      <EndProperty Name="DeliveryNoteLineItem">
+        <ScalarProperty Name="DeliveryNoteLineItemID" ColumnName="DeliveryNoteLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="AlloyID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_MonthlyAlloyCost_Alloy" TypeName="WahlModel.FK_MonthlyAlloyCost_Alloy" StoreEntitySet="MonthlyAlloyCost">
+      <EndProperty Name="Alloy">
+        <ScalarProperty Name="AlloyID" ColumnName="AlloyID" />
+      </EndProperty>
+      <EndProperty Name="MonthlyAlloyCost">
+        <ScalarProperty Name="MonthlyAlloyCostID" ColumnName="MonthlyAlloyCostID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeLineItem_Alloy" TypeName="WahlModel.FK_StockTakeLineItem_Alloy" StoreEntitySet="StockTakeLineItem">
+      <EndProperty Name="Alloy">
+        <ScalarProperty Name="AlloyID" ColumnName="AlloyID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeLineItem">
+        <ScalarProperty Name="StockTakeLineItemID" ColumnName="StockTakeLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="AlloyID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeVarianceLineItem_Alloy" TypeName="WahlModel.FK_StockTakeVarianceLineItem_Alloy" StoreEntitySet="StockTakeVarianceLineItem">
+      <EndProperty Name="Alloy">
+        <ScalarProperty Name="AlloyID" ColumnName="AlloyID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeVarianceLineItem">
+        <ScalarProperty Name="StockTakeVarianceLineItemID" ColumnName="StockTakeVarianceLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="AlloyID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CreditNoteLineItem_Casting" TypeName="WahlModel.FK_CreditNoteLineItem_Casting" StoreEntitySet="CreditNoteLineItem">
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+      </EndProperty>
+      <EndProperty Name="CreditNoteLineItem">
+        <ScalarProperty Name="CreditNoteLineItem1" ColumnName="CreditNoteLineItem" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_DailyProductionPerformance_Casting" TypeName="WahlModel.FK_DailyProductionPerformance_Casting" StoreEntitySet="DailyProductionPerformance">
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+      </EndProperty>
+      <EndProperty Name="DailyProductionPerformance">
+        <ScalarProperty Name="DailProductionPerformanceID" ColumnName="DailProductionPerformanceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_InvoiceLineItem_Casting" TypeName="WahlModel.FK_InvoiceLineItem_Casting" StoreEntitySet="InvoiceLineItem">
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+      </EndProperty>
+      <EndProperty Name="InvoiceLineItem">
+        <ScalarProperty Name="InvoiceLineItemID" ColumnName="InvoiceLineItemID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_m_Quotation_m_Casting" TypeName="WahlModel.FK_m_Quotation_m_Casting" StoreEntitySet="Quotation">
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+      </EndProperty>
+      <EndProperty Name="Quotation">
+        <ScalarProperty Name="QuotationID" ColumnName="QuotationID" />
+      </EndProperty>
+      <Condition ColumnName="CastingID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_PurchaseOrderLineItems_Casting" TypeName="WahlModel.FK_PurchaseOrderLineItems_Casting" StoreEntitySet="PurchaseOrderLineItems">
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+      </EndProperty>
+      <EndProperty Name="PurchaseOrderLineItems">
+        <ScalarProperty Name="PurchaseOrderLineItemID" ColumnName="PurchaseOrderLineItemID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SpecialCasting_Casting" TypeName="WahlModel.FK_SpecialCasting_Casting" StoreEntitySet="SpecialCasting">
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingId" />
+      </EndProperty>
+      <EndProperty Name="SpecialCasting">
+        <ScalarProperty Name="SpecialCastingId" ColumnName="SpecialCastingId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeLineItem_Casting" TypeName="WahlModel.FK_StockTakeLineItem_Casting" StoreEntitySet="StockTakeLineItem">
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeLineItem">
+        <ScalarProperty Name="StockTakeLineItemID" ColumnName="StockTakeLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="CastingID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeVarianceLineItem_Casting" TypeName="WahlModel.FK_StockTakeVarianceLineItem_Casting" StoreEntitySet="StockTakeVarianceLineItem">
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeVarianceLineItem">
+        <ScalarProperty Name="StockTakeVarianceLineItemID" ColumnName="StockTakeVarianceLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="CastingID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_WeeklyPlan_Casting" TypeName="WahlModel.FK_WeeklyPlan_Casting" StoreEntitySet="WeeklyPlan">
+      <EndProperty Name="Casting">
+        <ScalarProperty Name="CastingID" ColumnName="CastingID" />
+      </EndProperty>
+      <EndProperty Name="WeeklyPlan">
+        <ScalarProperty Name="WeeklyPlanID" ColumnName="WeeklyPlanID" />
+      </EndProperty>
+      <Condition ColumnName="CastingID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CreditNote_Company" TypeName="WahlModel.FK_CreditNote_Company" StoreEntitySet="CreditNote">
+      <EndProperty Name="Company">
+        <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+      </EndProperty>
+      <EndProperty Name="CreditNote">
+        <ScalarProperty Name="CreditNoteID" ColumnName="CreditNoteID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_DeliveryNote_Company" TypeName="WahlModel.FK_DeliveryNote_Company" StoreEntitySet="DeliveryNote">
+      <EndProperty Name="Company">
+        <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+      </EndProperty>
+      <EndProperty Name="DeliveryNote">
+        <ScalarProperty Name="DeliveryNoteID" ColumnName="DeliveryNoteID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Invoice_Company" TypeName="WahlModel.FK_Invoice_Company" StoreEntitySet="Invoice">
+      <EndProperty Name="Company">
+        <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+      </EndProperty>
+      <EndProperty Name="Invoice">
+        <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+      </EndProperty>
+      <Condition ColumnName="CompanyID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Quotation_Company" TypeName="WahlModel.FK_Quotation_Company" StoreEntitySet="Quotation">
+      <EndProperty Name="Company">
+        <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+      </EndProperty>
+      <EndProperty Name="Quotation">
+        <ScalarProperty Name="QuotationID" ColumnName="QuotationID" />
+      </EndProperty>
+      <Condition ColumnName="CompanyID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_WeeklyPlan_Company" TypeName="WahlModel.FK_WeeklyPlan_Company" StoreEntitySet="WeeklyPlan">
+      <EndProperty Name="Company">
+        <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+      </EndProperty>
+      <EndProperty Name="WeeklyPlan">
+        <ScalarProperty Name="WeeklyPlanID" ColumnName="WeeklyPlanID" />
+      </EndProperty>
+      <Condition ColumnName="CompanyID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_DeliveryNoteLineItem_Consumable" TypeName="WahlModel.FK_DeliveryNoteLineItem_Consumable" StoreEntitySet="DeliveryNoteLineItem">
+      <EndProperty Name="Consumable">
+        <ScalarProperty Name="ConsumableID" ColumnName="ConsumableID" />
+      </EndProperty>
+      <EndProperty Name="DeliveryNoteLineItem">
+        <ScalarProperty Name="DeliveryNoteLineItemID" ColumnName="DeliveryNoteLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="ConsumableID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CreditNoteLineItem_CreditNote" TypeName="WahlModel.FK_CreditNoteLineItem_CreditNote" StoreEntitySet="CreditNoteLineItem">
+      <EndProperty Name="CreditNote">
+        <ScalarProperty Name="CreditNoteID" ColumnName="CreditNoteID" />
+      </EndProperty>
+      <EndProperty Name="CreditNoteLineItem">
+        <ScalarProperty Name="CreditNoteLineItem1" ColumnName="CreditNoteLineItem" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_DeliveryNote_Suppliers" TypeName="WahlModel.FK_DeliveryNote_Suppliers" StoreEntitySet="DeliveryNote">
+      <EndProperty Name="Suppliers">
+        <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+      </EndProperty>
+      <EndProperty Name="DeliveryNote">
+        <ScalarProperty Name="DeliveryNoteID" ColumnName="DeliveryNoteID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_DeliveryNoteLineItem_DeliveryNote" TypeName="WahlModel.FK_DeliveryNoteLineItem_DeliveryNote" StoreEntitySet="DeliveryNoteLineItem">
+      <EndProperty Name="DeliveryNote">
+        <ScalarProperty Name="DeliveryNoteID" ColumnName="DeliveryNoteID" />
+      </EndProperty>
+      <EndProperty Name="DeliveryNoteLineItem">
+        <ScalarProperty Name="DeliveryNoteLineItemID" ColumnName="DeliveryNoteLineItemID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeLineItem_Die" TypeName="WahlModel.FK_StockTakeLineItem_Die" StoreEntitySet="StockTakeLineItem">
+      <EndProperty Name="Die">
+        <ScalarProperty Name="DieID" ColumnName="DieID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeLineItem">
+        <ScalarProperty Name="StockTakeLineItemID" ColumnName="StockTakeLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="DieID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeVarianceLineItem_Die" TypeName="WahlModel.FK_StockTakeVarianceLineItem_Die" StoreEntitySet="StockTakeVarianceLineItem">
+      <EndProperty Name="Die">
+        <ScalarProperty Name="DieID" ColumnName="DieID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeVarianceLineItem">
+        <ScalarProperty Name="StockTakeVarianceLineItemID" ColumnName="StockTakeVarianceLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="DieID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_InvoiceLineItem_Invoice" TypeName="WahlModel.FK_InvoiceLineItem_Invoice" StoreEntitySet="InvoiceLineItem">
+      <EndProperty Name="Invoice">
+        <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+      </EndProperty>
+      <EndProperty Name="InvoiceLineItem">
+        <ScalarProperty Name="InvoiceLineItemID" ColumnName="InvoiceLineItemID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_InvoiceLineItem_PurchaseOrder" TypeName="WahlModel.FK_InvoiceLineItem_PurchaseOrder" StoreEntitySet="InvoiceLineItem">
+      <EndProperty Name="PurchaseOrder">
+        <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+      </EndProperty>
+      <EndProperty Name="InvoiceLineItem">
+        <ScalarProperty Name="InvoiceLineItemID" ColumnName="InvoiceLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="PurchaseOrderID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Menu_Menu" TypeName="WahlModel.FK_Menu_Menu" StoreEntitySet="Menu">
+      <EndProperty Name="Menu">
+        <ScalarProperty Name="MenuId" ColumnName="ParentId" />
+      </EndProperty>
+      <EndProperty Name="Menu1">
+        <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+      </EndProperty>
+      <Condition ColumnName="ParentId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_RolePermission_Menu" TypeName="WahlModel.FK_RolePermission_Menu" StoreEntitySet="RolePermission">
+      <EndProperty Name="Menu">
+        <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+      </EndProperty>
+      <EndProperty Name="RolePermission">
+        <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_MonthlyAlloyCost_MonthlyExpense" TypeName="WahlModel.FK_MonthlyAlloyCost_MonthlyExpense" StoreEntitySet="MonthlyAlloyCost">
+      <EndProperty Name="MonthlyExpense">
+        <ScalarProperty Name="MonthlyExpensesID" ColumnName="MonthlyExpensesID" />
+      </EndProperty>
+      <EndProperty Name="MonthlyAlloyCost">
+        <ScalarProperty Name="MonthlyAlloyCostID" ColumnName="MonthlyAlloyCostID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_m_Quotation_m_PurchaseOrder" TypeName="WahlModel.FK_m_Quotation_m_PurchaseOrder" StoreEntitySet="Quotation">
+      <EndProperty Name="PurchaseOrder">
+        <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+      </EndProperty>
+      <EndProperty Name="Quotation">
+        <ScalarProperty Name="QuotationID" ColumnName="QuotationID" />
+      </EndProperty>
+      <Condition ColumnName="PurchaseOrderID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_PurchaseOrderLineItems_PurchaseOrder" TypeName="WahlModel.FK_PurchaseOrderLineItems_PurchaseOrder" StoreEntitySet="PurchaseOrderLineItems">
+      <EndProperty Name="PurchaseOrder">
+        <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+      </EndProperty>
+      <EndProperty Name="PurchaseOrderLineItems">
+        <ScalarProperty Name="PurchaseOrderLineItemID" ColumnName="PurchaseOrderLineItemID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_WeeklyPlan_PurchaseOrder" TypeName="WahlModel.FK_WeeklyPlan_PurchaseOrder" StoreEntitySet="WeeklyPlan">
+      <EndProperty Name="PurchaseOrder">
+        <ScalarProperty Name="PurchaseOrderID" ColumnName="PurchaseOrderID" />
+      </EndProperty>
+      <EndProperty Name="WeeklyPlan">
+        <ScalarProperty Name="WeeklyPlanID" ColumnName="WeeklyPlanID" />
+      </EndProperty>
+      <Condition ColumnName="PurchaseOrderID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_RolePermission_Roles" TypeName="WahlModel.FK_RolePermission_Roles" StoreEntitySet="RolePermission">
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+      </EndProperty>
+      <EndProperty Name="RolePermission">
+        <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_User_Roles" TypeName="WahlModel.FK_User_Roles" StoreEntitySet="User">
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="UserID" ColumnName="UserID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeLineItem_Sample" TypeName="WahlModel.FK_StockTakeLineItem_Sample" StoreEntitySet="StockTakeLineItem">
+      <EndProperty Name="Sample">
+        <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeLineItem">
+        <ScalarProperty Name="StockTakeLineItemID" ColumnName="StockTakeLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="SampleID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeVarianceLineItem_Sample" TypeName="WahlModel.FK_StockTakeVarianceLineItem_Sample" StoreEntitySet="StockTakeVarianceLineItem">
+      <EndProperty Name="Sample">
+        <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeVarianceLineItem">
+        <ScalarProperty Name="StockTakeVarianceLineItemID" ColumnName="StockTakeVarianceLineItemID" />
+      </EndProperty>
+      <Condition ColumnName="SampleID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeLineItem_StockTake" TypeName="WahlModel.FK_StockTakeLineItem_StockTake" StoreEntitySet="StockTakeLineItem">
+      <EndProperty Name="StockTake">
+        <ScalarProperty Name="StockTakeID" ColumnName="StockTakeID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeLineItem">
+        <ScalarProperty Name="StockTakeLineItemID" ColumnName="StockTakeLineItemID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_StockTakeVarianceLineItem_StockTake" TypeName="WahlModel.FK_StockTakeVarianceLineItem_StockTake" StoreEntitySet="StockTakeVarianceLineItem">
+      <EndProperty Name="StockTake">
+        <ScalarProperty Name="StockTakeID" ColumnName="StockTakeID" />
+      </EndProperty>
+      <EndProperty Name="StockTakeVarianceLineItem">
+        <ScalarProperty Name="StockTakeVarianceLineItemID" ColumnName="StockTakeVarianceLineItemID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

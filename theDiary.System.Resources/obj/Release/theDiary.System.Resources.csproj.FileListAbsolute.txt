@@ -1,0 +1,14 @@
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.System.Resources\bin\Release\Seth.System.Resources.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.System.Resources\bin\Release\Seth.System.Resources.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.System.Resources\bin\Release\Seth.System.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.System.Resources\bin\Release\Seth.System.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.System.Resources\obj\Release\theDiary.System.Resources.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.System.Resources\obj\Release\Seth.System.Resources.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.System.Resources\obj\Release\Seth.System.Resources.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Release\theDiary.System.Resources.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Release\theDiary.System.Resources.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Release\theDiary.System.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Release\theDiary.System.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Release\theDiary.System.Resources.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Release\theDiary.System.Resources.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Release\theDiary.System.Resources.pdb

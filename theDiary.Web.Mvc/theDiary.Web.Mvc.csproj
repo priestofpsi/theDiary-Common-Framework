@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76240C28-CC66-4CDE-B3B2-30ACC58330C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Web.Mvc</RootNamespace>
+    <AssemblyName>theDiary.Web.Mvc</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Linq.Dynamic, Version=1.0.5840.25917, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\System.Linq.Dynamic.1.0.6\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Staff Tracker\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentModel\DataAnnotations\AutoCompleteAttribute.cs" />
+    <Compile Include="ComponentModel\DataAnnotations\HiddenAttribute.cs" />
+    <Compile Include="ComponentModel\DataAnnotations\ReadOnlyAttribute.cs" />
+    <Compile Include="Common.Extensions.cs" />
+    <Compile Include="ApiController.Generic.cs" />
+    <Compile Include="ComponentModel\DataAnnotations\RequiredIfAttribute.cs" />
+    <Compile Include="Controller.Generic.cs" />
+    <Compile Include="EnumValue.cs" />
+    <Compile Include="FileDownload\CSVExportProvider.cs" />
+    <Compile Include="FileDownload\Extensions.ExcelExport.cs" />
+    <Compile Include="FileDownload\PrimitiveExcelExportProvider.cs" />
+    <Compile Include="Filters\BrowserCacheAttribute.cs" />
+    <Compile Include="Filters\NoBrowserCacheAttribute.cs" />
+    <Compile Include="Html\AutoCompleteHelper.cs" />
+    <Compile Include="Html\Extensions.Controller.cs" />
+    <Compile Include="Html\Extensions.Localize.cs" />
+    <Compile Include="Html\Extensions.Metadata.cs" />
+    <Compile Include="Html\Extensions.Select.cs" />
+    <Compile Include="Html\PopupDialogHelper.cs" />
+    <Compile Include="Html\ViewRenderer.cs" />
+    <Compile Include="Optimization\Configuration\BundleConfigurationElement.cs" />
+    <Compile Include="Optimization\Configuration\BundleConfigurationElementCollection.cs" />
+    <Compile Include="Optimization\Configuration\BundleConfigurationsCollection.cs" />
+    <Compile Include="Optimization\Configuration\BundleConfigurationSection.cs" />
+    <Compile Include="Optimization\RegisteredBundle.cs" />
+    <Compile Include="Paging\IPagedList.cs" />
+    <Compile Include="Paging\PagedList.cs" />
+    <Compile Include="Paging\Pager.cs" />
+    <Compile Include="Paging\PagerOptions.cs" />
+    <Compile Include="Paging\PagerOptionsBuilder.cs" />
+    <Compile Include="Paging\PaginationLink.cs" />
+    <Compile Include="Paging\PaginationModel.cs" />
+    <Compile Include="Paging\PagingExtensions.cs" />
+    <Compile Include="Paging\RouteValueDictionaryExtensions.cs" />
+    <Compile Include="MetadataProvider.cs" />
+    <Compile Include="HttpHandlers\PopupDialogJavaScriptHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Html\Extensions.Enum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileDownload\DownloadStream.cs" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\popupDialog.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\theDiary.System\theDiary.System.csproj">
+      <Project>{969581e6-8d34-465f-b31a-b457d46a80ad}</Project>
+      <Name>theDiary.System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\theDiary.Web\theDiary.Web.csproj">
+      <Project>{bf1419fe-e559-4fd6-85a2-8bb3c5549777}</Project>
+      <Name>theDiary.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

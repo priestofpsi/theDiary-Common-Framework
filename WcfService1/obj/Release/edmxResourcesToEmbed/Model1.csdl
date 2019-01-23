@@ -1,0 +1,1143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WahlModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WahlEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Account" EntityType="WahlModel.Account" />
+    <EntitySet Name="Alloy" EntityType="WahlModel.Alloy" />
+    <EntitySet Name="Casting" EntityType="WahlModel.Casting" />
+    <EntitySet Name="CastingCodedelete" EntityType="WahlModel.CastingCodedelete" />
+    <EntitySet Name="Company" EntityType="WahlModel.Company" />
+    <EntitySet Name="Consumable" EntityType="WahlModel.Consumable" />
+    <EntitySet Name="CreditNote" EntityType="WahlModel.CreditNote" />
+    <EntitySet Name="CreditNoteLineItem" EntityType="WahlModel.CreditNoteLineItem" />
+    <EntitySet Name="DailyProductionPerformance" EntityType="WahlModel.DailyProductionPerformance" />
+    <EntitySet Name="Day" EntityType="WahlModel.Day" />
+    <EntitySet Name="DeliveryNote" EntityType="WahlModel.DeliveryNote" />
+    <EntitySet Name="DeliveryNoteLineItem" EntityType="WahlModel.DeliveryNoteLineItem" />
+    <EntitySet Name="Die" EntityType="WahlModel.Die" />
+    <EntitySet Name="DieOwnership" EntityType="WahlModel.DieOwnership" />
+    <EntitySet Name="Employee" EntityType="WahlModel.Employee" />
+    <EntitySet Name="ExternalCustomer" EntityType="WahlModel.ExternalCustomer" />
+    <EntitySet Name="Inventory" EntityType="WahlModel.Inventory" />
+    <EntitySet Name="InventoryGroup" EntityType="WahlModel.InventoryGroup" />
+    <EntitySet Name="InventoryType" EntityType="WahlModel.InventoryType" />
+    <EntitySet Name="Invoice" EntityType="WahlModel.Invoice" />
+    <EntitySet Name="InvoiceLineItem" EntityType="WahlModel.InvoiceLineItem" />
+    <EntitySet Name="Menu" EntityType="WahlModel.Menu" />
+    <EntitySet Name="Month" EntityType="WahlModel.Month" />
+    <EntitySet Name="MonthlyAlloyCost" EntityType="WahlModel.MonthlyAlloyCost" />
+    <EntitySet Name="MonthlyExpense" EntityType="WahlModel.MonthlyExpense" />
+    <EntitySet Name="PurchaseOrder" EntityType="WahlModel.PurchaseOrder" />
+    <EntitySet Name="PurchaseOrderLineItems" EntityType="WahlModel.PurchaseOrderLineItems" />
+    <EntitySet Name="Quotation" EntityType="WahlModel.Quotation" />
+    <EntitySet Name="ReturnToSupplier" EntityType="WahlModel.ReturnToSupplier" />
+    <EntitySet Name="RolePermission" EntityType="WahlModel.RolePermission" />
+    <EntitySet Name="Roles" EntityType="WahlModel.Roles" />
+    <EntitySet Name="Sample" EntityType="WahlModel.Sample" />
+    <EntitySet Name="SearchField" EntityType="WahlModel.SearchField" />
+    <EntitySet Name="SearchType" EntityType="WahlModel.SearchType" />
+    <EntitySet Name="SpecialCasting" EntityType="WahlModel.SpecialCasting" />
+    <EntitySet Name="StockTake" EntityType="WahlModel.StockTake" />
+    <EntitySet Name="StockTakeLineItem" EntityType="WahlModel.StockTakeLineItem" />
+    <EntitySet Name="StockTakeVarianceLineItem" EntityType="WahlModel.StockTakeVarianceLineItem" />
+    <EntitySet Name="Suppliers" EntityType="WahlModel.Suppliers" />
+    <EntitySet Name="SupplierType" EntityType="WahlModel.SupplierType" />
+    <EntitySet Name="sysdiagrams" EntityType="WahlModel.sysdiagrams" />
+    <EntitySet Name="temp_DataSource" EntityType="WahlModel.temp_DataSource" />
+    <EntitySet Name="temp_Reports" EntityType="WahlModel.temp_Reports" />
+    <EntitySet Name="User" EntityType="WahlModel.User" />
+    <EntitySet Name="WeeklyPlan" EntityType="WahlModel.WeeklyPlan" />
+    <EntitySet Name="Year" EntityType="WahlModel.Year" />
+    <AssociationSet Name="FK_PurchaseOrder_Account" Association="WahlModel.FK_PurchaseOrder_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Casting_Alloy" Association="WahlModel.FK_Casting_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="Casting" EntitySet="Casting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNoteLineItem_Alloy" Association="WahlModel.FK_DeliveryNoteLineItem_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="DeliveryNoteLineItem" EntitySet="DeliveryNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MonthlyAlloyCost_Alloy" Association="WahlModel.FK_MonthlyAlloyCost_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="MonthlyAlloyCost" EntitySet="MonthlyAlloyCost" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_Alloy" Association="WahlModel.FK_StockTakeLineItem_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_Alloy" Association="WahlModel.FK_StockTakeVarianceLineItem_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CreditNoteLineItem_Casting" Association="WahlModel.FK_CreditNoteLineItem_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="CreditNoteLineItem" EntitySet="CreditNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DailyProductionPerformance_Casting" Association="WahlModel.FK_DailyProductionPerformance_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="DailyProductionPerformance" EntitySet="DailyProductionPerformance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceLineItem_Casting" Association="WahlModel.FK_InvoiceLineItem_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="InvoiceLineItem" EntitySet="InvoiceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_m_Quotation_m_Casting" Association="WahlModel.FK_m_Quotation_m_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="Quotation" EntitySet="Quotation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrderLineItems_Casting" Association="WahlModel.FK_PurchaseOrderLineItems_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="PurchaseOrderLineItems" EntitySet="PurchaseOrderLineItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SpecialCasting_Casting" Association="WahlModel.FK_SpecialCasting_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="SpecialCasting" EntitySet="SpecialCasting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_Casting" Association="WahlModel.FK_StockTakeLineItem_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_Casting" Association="WahlModel.FK_StockTakeVarianceLineItem_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WeeklyPlan_Casting" Association="WahlModel.FK_WeeklyPlan_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="WeeklyPlan" EntitySet="WeeklyPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CreditNote_Company" Association="WahlModel.FK_CreditNote_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="CreditNote" EntitySet="CreditNote" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNote_Company" Association="WahlModel.FK_DeliveryNote_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="DeliveryNote" EntitySet="DeliveryNote" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_Company" Association="WahlModel.FK_Invoice_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Quotation_Company" Association="WahlModel.FK_Quotation_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Quotation" EntitySet="Quotation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WeeklyPlan_Company" Association="WahlModel.FK_WeeklyPlan_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="WeeklyPlan" EntitySet="WeeklyPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNoteLineItem_Consumable" Association="WahlModel.FK_DeliveryNoteLineItem_Consumable">
+      <End Role="Consumable" EntitySet="Consumable" />
+      <End Role="DeliveryNoteLineItem" EntitySet="DeliveryNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CreditNoteLineItem_CreditNote" Association="WahlModel.FK_CreditNoteLineItem_CreditNote">
+      <End Role="CreditNote" EntitySet="CreditNote" />
+      <End Role="CreditNoteLineItem" EntitySet="CreditNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNote_Suppliers" Association="WahlModel.FK_DeliveryNote_Suppliers">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="DeliveryNote" EntitySet="DeliveryNote" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNoteLineItem_DeliveryNote" Association="WahlModel.FK_DeliveryNoteLineItem_DeliveryNote">
+      <End Role="DeliveryNote" EntitySet="DeliveryNote" />
+      <End Role="DeliveryNoteLineItem" EntitySet="DeliveryNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_Die" Association="WahlModel.FK_StockTakeLineItem_Die">
+      <End Role="Die" EntitySet="Die" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_Die" Association="WahlModel.FK_StockTakeVarianceLineItem_Die">
+      <End Role="Die" EntitySet="Die" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceLineItem_Invoice" Association="WahlModel.FK_InvoiceLineItem_Invoice">
+      <End Role="Invoice" EntitySet="Invoice" />
+      <End Role="InvoiceLineItem" EntitySet="InvoiceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceLineItem_PurchaseOrder" Association="WahlModel.FK_InvoiceLineItem_PurchaseOrder">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="InvoiceLineItem" EntitySet="InvoiceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menu_Menu" Association="WahlModel.FK_Menu_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="Menu1" EntitySet="Menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolePermission_Menu" Association="WahlModel.FK_RolePermission_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="RolePermission" EntitySet="RolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MonthlyAlloyCost_MonthlyExpense" Association="WahlModel.FK_MonthlyAlloyCost_MonthlyExpense">
+      <End Role="MonthlyExpense" EntitySet="MonthlyExpense" />
+      <End Role="MonthlyAlloyCost" EntitySet="MonthlyAlloyCost" />
+    </AssociationSet>
+    <AssociationSet Name="FK_m_Quotation_m_PurchaseOrder" Association="WahlModel.FK_m_Quotation_m_PurchaseOrder">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="Quotation" EntitySet="Quotation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrderLineItems_PurchaseOrder" Association="WahlModel.FK_PurchaseOrderLineItems_PurchaseOrder">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="PurchaseOrderLineItems" EntitySet="PurchaseOrderLineItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WeeklyPlan_PurchaseOrder" Association="WahlModel.FK_WeeklyPlan_PurchaseOrder">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="WeeklyPlan" EntitySet="WeeklyPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolePermission_Roles" Association="WahlModel.FK_RolePermission_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="RolePermission" EntitySet="RolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Roles" Association="WahlModel.FK_User_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_Sample" Association="WahlModel.FK_StockTakeLineItem_Sample">
+      <End Role="Sample" EntitySet="Sample" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_Sample" Association="WahlModel.FK_StockTakeVarianceLineItem_Sample">
+      <End Role="Sample" EntitySet="Sample" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_StockTake" Association="WahlModel.FK_StockTakeLineItem_StockTake">
+      <End Role="StockTake" EntitySet="StockTake" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_StockTake" Association="WahlModel.FK_StockTakeVarianceLineItem_StockTake">
+      <End Role="StockTake" EntitySet="StockTake" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="PurchaseOrder" Relationship="WahlModel.FK_PurchaseOrder_Account" FromRole="Account" ToRole="PurchaseOrder" />
+  </EntityType>
+  <EntityType Name="Alloy">
+    <Key>
+      <PropertyRef Name="AlloyID" />
+    </Key>
+    <Property Name="AlloyID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Quantity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Unit" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SandWeight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WeightOnHand" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Unitonhand" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Runnerweight" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_Casting_Alloy" FromRole="Alloy" ToRole="Casting" />
+    <NavigationProperty Name="DeliveryNoteLineItem" Relationship="WahlModel.FK_DeliveryNoteLineItem_Alloy" FromRole="Alloy" ToRole="DeliveryNoteLineItem" />
+    <NavigationProperty Name="MonthlyAlloyCost" Relationship="WahlModel.FK_MonthlyAlloyCost_Alloy" FromRole="Alloy" ToRole="MonthlyAlloyCost" />
+    <NavigationProperty Name="StockTakeLineItem" Relationship="WahlModel.FK_StockTakeLineItem_Alloy" FromRole="Alloy" ToRole="StockTakeLineItem" />
+    <NavigationProperty Name="StockTakeVarianceLineItem" Relationship="WahlModel.FK_StockTakeVarianceLineItem_Alloy" FromRole="Alloy" ToRole="StockTakeVarianceLineItem" />
+  </EntityType>
+  <EntityType Name="Casting">
+    <Key>
+      <PropertyRef Name="CastingID" />
+    </Key>
+    <Property Name="CastingID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Company" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Customer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DieOwnership" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Standard" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FettlerStandard" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Cavity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RunnerWeight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Temperature" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Sandblasting" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CoreMaking" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CoreRemoval" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WeightCore" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NumberOfCasters" Type="Int32" />
+    <Property Name="PrefferedTable" Type="Int32" />
+    <Property Name="PrefferedFurnace" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PrefferedCaster1" Type="Int32" />
+    <Property Name="PrefferedCaster2" Type="Int32" />
+    <Property Name="PrefferedCaster3" Type="Int32" />
+    <Property Name="DieID" Type="Int32" />
+    <Property Name="SampleID" Type="Int32" />
+    <Property Name="SandCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="GlueCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CoreMakerCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CoreRemoverCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SandUsed" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="GlueUsed" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="TotalSandCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="DrillingCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TappingCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TurningCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MillingCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ThreadingCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TotalMachineryCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="InventoryUnitsOnHand" Type="Int32" />
+    <Property Name="InventoryUnitsOnHandWithRunners" Type="Int32" />
+    <Property Name="Deleted" Type="Boolean" />
+    <NavigationProperty Name="Alloy" Relationship="WahlModel.FK_Casting_Alloy" FromRole="Casting" ToRole="Alloy" />
+    <NavigationProperty Name="CreditNoteLineItem" Relationship="WahlModel.FK_CreditNoteLineItem_Casting" FromRole="Casting" ToRole="CreditNoteLineItem" />
+    <NavigationProperty Name="DailyProductionPerformance" Relationship="WahlModel.FK_DailyProductionPerformance_Casting" FromRole="Casting" ToRole="DailyProductionPerformance" />
+    <NavigationProperty Name="InvoiceLineItem" Relationship="WahlModel.FK_InvoiceLineItem_Casting" FromRole="Casting" ToRole="InvoiceLineItem" />
+    <NavigationProperty Name="Quotation" Relationship="WahlModel.FK_m_Quotation_m_Casting" FromRole="Casting" ToRole="Quotation" />
+    <NavigationProperty Name="PurchaseOrderLineItems" Relationship="WahlModel.FK_PurchaseOrderLineItems_Casting" FromRole="Casting" ToRole="PurchaseOrderLineItems" />
+    <NavigationProperty Name="SpecialCasting" Relationship="WahlModel.FK_SpecialCasting_Casting" FromRole="Casting" ToRole="SpecialCasting" />
+    <NavigationProperty Name="StockTakeLineItem" Relationship="WahlModel.FK_StockTakeLineItem_Casting" FromRole="Casting" ToRole="StockTakeLineItem" />
+    <NavigationProperty Name="StockTakeVarianceLineItem" Relationship="WahlModel.FK_StockTakeVarianceLineItem_Casting" FromRole="Casting" ToRole="StockTakeVarianceLineItem" />
+    <NavigationProperty Name="WeeklyPlan" Relationship="WahlModel.FK_WeeklyPlan_Casting" FromRole="Casting" ToRole="WeeklyPlan" />
+  </EntityType>
+  <EntityType Name="CastingCodedelete">
+    <Key>
+      <PropertyRef Name="CastingCodeID" />
+    </Key>
+    <Property Name="CastingCodeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CreditNote" Relationship="WahlModel.FK_CreditNote_Company" FromRole="Company" ToRole="CreditNote" />
+    <NavigationProperty Name="DeliveryNote" Relationship="WahlModel.FK_DeliveryNote_Company" FromRole="Company" ToRole="DeliveryNote" />
+    <NavigationProperty Name="Invoice" Relationship="WahlModel.FK_Invoice_Company" FromRole="Company" ToRole="Invoice" />
+    <NavigationProperty Name="Quotation" Relationship="WahlModel.FK_Quotation_Company" FromRole="Company" ToRole="Quotation" />
+    <NavigationProperty Name="WeeklyPlan" Relationship="WahlModel.FK_WeeklyPlan_Company" FromRole="Company" ToRole="WeeklyPlan" />
+  </EntityType>
+  <EntityType Name="Consumable">
+    <Key>
+      <PropertyRef Name="ConsumableID" />
+    </Key>
+    <Property Name="ConsumableID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="MaterialType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Quantity" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Unit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="3" />
+    <NavigationProperty Name="DeliveryNoteLineItem" Relationship="WahlModel.FK_DeliveryNoteLineItem_Consumable" FromRole="Consumable" ToRole="DeliveryNoteLineItem" />
+  </EntityType>
+  <EntityType Name="CreditNote">
+    <Key>
+      <PropertyRef Name="CreditNoteID" />
+    </Key>
+    <Property Name="CreditNoteID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceDate" Type="DateTime" Precision="0" />
+    <Property Name="ReturnToSupplierID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="TotalQuantity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalWeight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalCost" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Company" Relationship="WahlModel.FK_CreditNote_Company" FromRole="CreditNote" ToRole="Company" />
+    <NavigationProperty Name="CreditNoteLineItem" Relationship="WahlModel.FK_CreditNoteLineItem_CreditNote" FromRole="CreditNote" ToRole="CreditNoteLineItem" />
+  </EntityType>
+  <EntityType Name="CreditNoteLineItem">
+    <Key>
+      <PropertyRef Name="CreditNoteLineItem1" />
+    </Key>
+    <Property Name="CreditNoteLineItem1" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="UnitCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalWeight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalCost" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_CreditNoteLineItem_Casting" FromRole="CreditNoteLineItem" ToRole="Casting" />
+    <NavigationProperty Name="CreditNote" Relationship="WahlModel.FK_CreditNoteLineItem_CreditNote" FromRole="CreditNoteLineItem" ToRole="CreditNote" />
+  </EntityType>
+  <EntityType Name="DailyProductionPerformance">
+    <Key>
+      <PropertyRef Name="DailProductionPerformanceID" />
+    </Key>
+    <Property Name="DailProductionPerformanceID" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ShiftNo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ShiftDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="Pot" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PerformancePercentage" Type="Int32" Nullable="false" />
+    <Property Name="Standard" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Total9" Type="Int32" />
+    <Property Name="Scrap9" Type="Int32" />
+    <Property Name="Total11" Type="Int32" />
+    <Property Name="Scrap11" Type="Int32" />
+    <Property Name="Total13" Type="Int32" />
+    <Property Name="Scrap13" Type="Int32" />
+    <Property Name="Total15" Type="Int32" />
+    <Property Name="Scrap15" Type="Int32" />
+    <Property Name="Total16" Type="Int32" />
+    <Property Name="Scrap16" Type="Int32" />
+    <Property Name="TotalTotal" Type="Int32" />
+    <Property Name="TotalScrap" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ScrapFettling" Type="Int32" />
+    <Property Name="ScrapDrillingAndT" Type="Int32" />
+    <Property Name="ScrapQCBefore" Type="Int32" />
+    <Property Name="ScrapQCMandla" Type="Int32" />
+    <Property Name="CastingWeight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalWeight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ScrapManufacturing" Type="Int32" />
+    <Property Name="ShiftTypeModifier" Type="Int32" />
+    <Property Name="ShiftTypeId" Type="Int32" />
+    <Property Name="AdjustedStandard" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalCost" Type="Decimal" Precision="12" Scale="2" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_DailyProductionPerformance_Casting" FromRole="DailyProductionPerformance" ToRole="Casting" />
+  </EntityType>
+  <EntityType Name="Day">
+    <Key>
+      <PropertyRef Name="DayID" />
+    </Key>
+    <Property Name="DayID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Day1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="DeliveryNote">
+    <Key>
+      <PropertyRef Name="DeliveryNoteID" />
+    </Key>
+    <Property Name="DeliveryNoteID" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="SupplierInvoiceNo" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Company" Relationship="WahlModel.FK_DeliveryNote_Company" FromRole="DeliveryNote" ToRole="Company" />
+    <NavigationProperty Name="Suppliers" Relationship="WahlModel.FK_DeliveryNote_Suppliers" FromRole="DeliveryNote" ToRole="Suppliers" />
+    <NavigationProperty Name="DeliveryNoteLineItem" Relationship="WahlModel.FK_DeliveryNoteLineItem_DeliveryNote" FromRole="DeliveryNote" ToRole="DeliveryNoteLineItem" />
+  </EntityType>
+  <EntityType Name="DeliveryNoteLineItem">
+    <Key>
+      <PropertyRef Name="DeliveryNoteLineItemID" />
+    </Key>
+    <Property Name="DeliveryNoteLineItemID" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="UnitPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="TotalCost" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Alloy" Relationship="WahlModel.FK_DeliveryNoteLineItem_Alloy" FromRole="DeliveryNoteLineItem" ToRole="Alloy" />
+    <NavigationProperty Name="Consumable" Relationship="WahlModel.FK_DeliveryNoteLineItem_Consumable" FromRole="DeliveryNoteLineItem" ToRole="Consumable" />
+    <NavigationProperty Name="DeliveryNote" Relationship="WahlModel.FK_DeliveryNoteLineItem_DeliveryNote" FromRole="DeliveryNoteLineItem" ToRole="DeliveryNote" />
+  </EntityType>
+  <EntityType Name="Die">
+    <Key>
+      <PropertyRef Name="DieID" />
+    </Key>
+    <Property Name="DieID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="InvID" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Double" />
+    <Property Name="Cost" Type="Double" />
+    <Property Name="Unit" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Weight" Type="Double" />
+    <Property Name="SandWeight" Type="Double" />
+    <Property Name="Weightonhand" Type="Double" />
+    <Property Name="Unitonhand" Type="Double" />
+    <Property Name="Runnerweight" Type="Double" />
+    <NavigationProperty Name="StockTakeLineItem" Relationship="WahlModel.FK_StockTakeLineItem_Die" FromRole="Die" ToRole="StockTakeLineItem" />
+    <NavigationProperty Name="StockTakeVarianceLineItem" Relationship="WahlModel.FK_StockTakeVarianceLineItem_Die" FromRole="Die" ToRole="StockTakeVarianceLineItem" />
+  </EntityType>
+  <EntityType Name="DieOwnership">
+    <Key>
+      <PropertyRef Name="DieOwnershipID" />
+    </Key>
+    <Property Name="DieOwnershipID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="DieOwnershipDescription" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="Int32" />
+    <Property Name="FirstName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IDNumber" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ClockNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TeamLeader" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ExternalCustomer">
+    <Key>
+      <PropertyRef Name="ExternalCustomerID" />
+    </Key>
+    <Property Name="ExternalCustomerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="InventoryID" />
+    </Key>
+    <Property Name="InventoryID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Unit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="UnitCost" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="InventoryGroup">
+    <Key>
+      <PropertyRef Name="InventoryGroupID" />
+    </Key>
+    <Property Name="InventoryGroupID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="InventoryGroupDescription" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="InventoryType">
+    <Key>
+      <PropertyRef Name="InventoryTypeID" />
+    </Key>
+    <Property Name="InventoryTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="InventoryTypeDescription" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceNumber" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="InventoryID" Type="Int32" />
+    <Property Name="CastingID" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Account" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="AddressLine1" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CheckedByOfficer" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CheckedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="3" />
+    <Property Name="Fax" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="OrderNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="ReceivedBy" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ReceivedDate" Type="DateTime" Precision="3" />
+    <Property Name="SupplierID" Type="Int32" />
+    <Property Name="SupplierInvoiceNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="TotalNet" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="VatNo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Company" Relationship="WahlModel.FK_Invoice_Company" FromRole="Invoice" ToRole="Company" />
+    <NavigationProperty Name="InvoiceLineItem" Relationship="WahlModel.FK_InvoiceLineItem_Invoice" FromRole="Invoice" ToRole="InvoiceLineItem" />
+  </EntityType>
+  <EntityType Name="InvoiceLineItem">
+    <Key>
+      <PropertyRef Name="InvoiceLineItemID" />
+    </Key>
+    <Property Name="InvoiceLineItemID" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="UnitCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="TotalWeight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalCost" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_InvoiceLineItem_Casting" FromRole="InvoiceLineItem" ToRole="Casting" />
+    <NavigationProperty Name="Invoice" Relationship="WahlModel.FK_InvoiceLineItem_Invoice" FromRole="InvoiceLineItem" ToRole="Invoice" />
+    <NavigationProperty Name="PurchaseOrder" Relationship="WahlModel.FK_InvoiceLineItem_PurchaseOrder" FromRole="InvoiceLineItem" ToRole="PurchaseOrder" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="Guid" Nullable="false" />
+    <Property Name="Header" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MenuOrder" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Menu1" Relationship="WahlModel.FK_Menu_Menu" FromRole="Menu" ToRole="Menu1" />
+    <NavigationProperty Name="Menu2" Relationship="WahlModel.FK_Menu_Menu" FromRole="Menu1" ToRole="Menu" />
+    <NavigationProperty Name="RolePermission" Relationship="WahlModel.FK_RolePermission_Menu" FromRole="Menu" ToRole="RolePermission" />
+  </EntityType>
+  <EntityType Name="Month">
+    <Key>
+      <PropertyRef Name="MonthNumber" />
+    </Key>
+    <Property Name="MonthNumber" Type="Int32" Nullable="false" />
+    <Property Name="Month1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MonthlyAlloyCost">
+    <Key>
+      <PropertyRef Name="MonthlyAlloyCostID" />
+    </Key>
+    <Property Name="MonthlyAlloyCostID" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Month" Type="Int32" Nullable="false" />
+    <Property Name="Cost" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="StartingDate" Type="DateTime" Precision="3" />
+    <Property Name="EndingDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Alloy" Relationship="WahlModel.FK_MonthlyAlloyCost_Alloy" FromRole="MonthlyAlloyCost" ToRole="Alloy" />
+    <NavigationProperty Name="MonthlyExpense" Relationship="WahlModel.FK_MonthlyAlloyCost_MonthlyExpense" FromRole="MonthlyAlloyCost" ToRole="MonthlyExpense" />
+  </EntityType>
+  <EntityType Name="MonthlyExpense">
+    <Key>
+      <PropertyRef Name="MonthlyExpensesID" />
+    </Key>
+    <Property Name="MonthlyExpensesID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="Month" Type="Int32" />
+    <Property Name="TotalGas" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TotalElectricity" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TotalWater" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MachineryService" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Labour" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SafetyClothing" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TotalStandardMonthlyCosts" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CastingStdPercentagePerDay" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CasterPerDay" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="FettlerPerDay" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SandBlasterPerDay" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SandCoreMakerPerDay" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="SandCoreRemoverPerDay" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="GeneralExpenses" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TotalLabourCosts" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MetalLM4PerKg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MetalLM6PerKg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MetalLM9PerKg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MetalLM25PerKg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MetalZincPerKg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CostOfSandPerKg" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="GasAt" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ElectricityAt" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="StartingDate" Type="DateTime" Precision="3" />
+    <Property Name="EndingDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="MonthlyAlloyCost" Relationship="WahlModel.FK_MonthlyAlloyCost_MonthlyExpense" FromRole="MonthlyExpense" ToRole="MonthlyAlloyCost" />
+  </EntityType>
+  <EntityType Name="PurchaseOrder">
+    <Key>
+      <PropertyRef Name="PurchaseOrderID" />
+    </Key>
+    <Property Name="PurchaseOrderID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="AddressLine1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AddressLine3" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TaxRegistrationNumber" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Telephone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ContactName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="From" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="ExternalReference" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="OrderPlacedBy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="0" />
+    <Property Name="OrderID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ReceivedBy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DateReceived" Type="DateTime" Precision="0" />
+    <Property Name="Signed" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TotalExcl" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Tax" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TotalIncl" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Discount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="GrandTotal" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="Account" Relationship="WahlModel.FK_PurchaseOrder_Account" FromRole="PurchaseOrder" ToRole="Account" />
+    <NavigationProperty Name="InvoiceLineItem" Relationship="WahlModel.FK_InvoiceLineItem_PurchaseOrder" FromRole="PurchaseOrder" ToRole="InvoiceLineItem" />
+    <NavigationProperty Name="Quotation" Relationship="WahlModel.FK_m_Quotation_m_PurchaseOrder" FromRole="PurchaseOrder" ToRole="Quotation" />
+    <NavigationProperty Name="PurchaseOrderLineItems" Relationship="WahlModel.FK_PurchaseOrderLineItems_PurchaseOrder" FromRole="PurchaseOrder" ToRole="PurchaseOrderLineItems" />
+    <NavigationProperty Name="WeeklyPlan" Relationship="WahlModel.FK_WeeklyPlan_PurchaseOrder" FromRole="PurchaseOrder" ToRole="WeeklyPlan" />
+  </EntityType>
+  <EntityType Name="PurchaseOrderLineItems">
+    <Key>
+      <PropertyRef Name="PurchaseOrderLineItemID" />
+    </Key>
+    <Property Name="PurchaseOrderLineItemID" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Ordered" Type="Int32" />
+    <Property Name="QuantityUnit" Type="Int32" />
+    <Property Name="PriceExDiscount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Tax" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TotalExcl" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TotalIncl" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_PurchaseOrderLineItems_Casting" FromRole="PurchaseOrderLineItems" ToRole="Casting" />
+    <NavigationProperty Name="PurchaseOrder" Relationship="WahlModel.FK_PurchaseOrderLineItems_PurchaseOrder" FromRole="PurchaseOrderLineItems" ToRole="PurchaseOrder" />
+  </EntityType>
+  <EntityType Name="Quotation">
+    <Key>
+      <PropertyRef Name="QuotationID" />
+    </Key>
+    <Property Name="QuotationID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Cavities" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RunnerWeight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MetalContent" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MetalPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MetalTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Electricity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ElectricityTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Gas" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GasTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GeneralExpenses" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GeneralExpensesCastingCount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GeneralExpensesTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Caster" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CasterCastingCount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CasterTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Fettler" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FettlerCastingCount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FettlerTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalCastingCost" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Drilling" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Tapping" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Turning" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Milling" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Threading" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalMachineryCost" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Sandblasting" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SandblastingCastingCount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SandblastingTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CoreMaker" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CoreMakerCoreCount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CoreMakerTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CoreRemover" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CoreRemoverCastingCount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CoreRemoverTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SandUsed" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SandPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SandTotal" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalSandCost" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CurrentPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PercentageDifference" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotalCost" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="StandardPercentage" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_m_Quotation_m_Casting" FromRole="Quotation" ToRole="Casting" />
+    <NavigationProperty Name="Company" Relationship="WahlModel.FK_Quotation_Company" FromRole="Quotation" ToRole="Company" />
+    <NavigationProperty Name="PurchaseOrder" Relationship="WahlModel.FK_m_Quotation_m_PurchaseOrder" FromRole="Quotation" ToRole="PurchaseOrder" />
+  </EntityType>
+  <EntityType Name="ReturnToSupplier">
+    <Key>
+      <PropertyRef Name="ReturnToSupplierID" />
+    </Key>
+    <Property Name="ReturnToSupplierID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ExternalCustomerID" Type="Int32" />
+    <Property Name="InternalCustomerID" Type="Int32" />
+    <Property Name="To" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CastingID" Type="Int32" />
+    <Property Name="CompanyID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RolePermission">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="PermissionID" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Allowed" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Menu" Relationship="WahlModel.FK_RolePermission_Menu" FromRole="RolePermission" ToRole="Menu" />
+    <NavigationProperty Name="Roles" Relationship="WahlModel.FK_RolePermission_Roles" FromRole="RolePermission" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleDescription" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="RolePermission" Relationship="WahlModel.FK_RolePermission_Roles" FromRole="Roles" ToRole="RolePermission" />
+    <NavigationProperty Name="User" Relationship="WahlModel.FK_User_Roles" FromRole="Roles" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Sample">
+    <Key>
+      <PropertyRef Name="SampleID" />
+    </Key>
+    <Property Name="SampleID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="InvID" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Quantity" Type="Double" />
+    <Property Name="Cost" Type="Double" />
+    <Property Name="Unit" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Weight" Type="Double" />
+    <Property Name="SandWeight" Type="Double" />
+    <Property Name="Weightonhand" Type="Double" />
+    <Property Name="Unitonhand" Type="Double" />
+    <Property Name="Runnerweight" Type="Double" />
+    <NavigationProperty Name="StockTakeLineItem" Relationship="WahlModel.FK_StockTakeLineItem_Sample" FromRole="Sample" ToRole="StockTakeLineItem" />
+    <NavigationProperty Name="StockTakeVarianceLineItem" Relationship="WahlModel.FK_StockTakeVarianceLineItem_Sample" FromRole="Sample" ToRole="StockTakeVarianceLineItem" />
+  </EntityType>
+  <EntityType Name="SearchField">
+    <Key>
+      <PropertyRef Name="SearchFieldId" />
+    </Key>
+    <Property Name="SearchFieldId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SearchTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FieldName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SearchType">
+    <Key>
+      <PropertyRef Name="SearchTypeId" />
+    </Key>
+    <Property Name="SearchTypeId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SpecialCasting">
+    <Key>
+      <PropertyRef Name="SpecialCastingId" />
+    </Key>
+    <Property Name="SpecialCastingId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="OldCastingID" Type="Int32" />
+    <Property Name="SandCasting" Type="Boolean" />
+    <Property Name="SandCore" Type="Boolean" />
+    <Property Name="SandBlasted" Type="Boolean" />
+    <Property Name="BrassInsert" Type="Boolean" />
+    <Property Name="AluminiumInsert" Type="Boolean" />
+    <Property Name="StainlessSteelInsert" Type="Boolean" />
+    <Property Name="Hydraulics" Type="Boolean" />
+    <Property Name="HeatTreated" Type="Boolean" />
+    <Property Name="SandCup" Type="Boolean" />
+    <Property Name="CupsFixed" Type="Int32" />
+    <Property Name="CupsLoose" Type="Int32" />
+    <Property Name="Cores" Type="Int32" />
+    <Property Name="CoresCollapsible" Type="Int32" />
+    <Property Name="BaseLoose" Type="Int32" />
+    <Property Name="BaseFixed" Type="Int32" />
+    <Property Name="DiePieces" Type="Int32" />
+    <Property Name="KnockOutPins" Type="Int32" />
+    <Property Name="Pins" Type="Int32" />
+    <Property Name="Wedges" Type="Int32" />
+    <Property Name="Slides" Type="Int32" />
+    <Property Name="ClampsQty" Type="Int32" />
+    <Property Name="ClampsSize" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="HammersQty" Type="Int32" />
+    <Property Name="HammersSize" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="PryeBarsQty" Type="Int32" />
+    <Property Name="PryeBarsSize" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Forks" Type="Int32" />
+    <Property Name="Hooks" Type="Int32" />
+    <Property Name="Runners" Type="Int32" />
+    <Property Name="Water" Type="Int32" />
+    <Property Name="AirGuns" Type="Int32" />
+    <Property Name="Pliers" Type="Int32" />
+    <Property Name="DieCoat34Used" Type="Boolean" />
+    <Property Name="DieCoat34Where" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DieCoat39Used" Type="Boolean" />
+    <Property Name="DieCoat39Where" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DieCoat140Used" Type="Boolean" />
+    <Property Name="DieCoat140Where" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DieCoat11Used" Type="Boolean" />
+    <Property Name="DieCoat11Where" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LubixOilUsed" Type="Boolean" />
+    <Property Name="LubixOilWhere" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="OtherUsed" Type="Boolean" />
+    <Property Name="OtherWhere" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CastingInstructions" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+    <Property Name="HeatingInstructions" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+    <Property Name="SprayingInstructions" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+    <Property Name="OtherInstructions" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_SpecialCasting_Casting" FromRole="SpecialCasting" ToRole="Casting" />
+  </EntityType>
+  <EntityType Name="StockTake">
+    <Key>
+      <PropertyRef Name="StockTakeID" />
+    </Key>
+    <Property Name="StockTakeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Finalized" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="StockTakeLineItem" Relationship="WahlModel.FK_StockTakeLineItem_StockTake" FromRole="StockTake" ToRole="StockTakeLineItem" />
+    <NavigationProperty Name="StockTakeVarianceLineItem" Relationship="WahlModel.FK_StockTakeVarianceLineItem_StockTake" FromRole="StockTake" ToRole="StockTakeVarianceLineItem" />
+  </EntityType>
+  <EntityType Name="StockTakeLineItem">
+    <Key>
+      <PropertyRef Name="StockTakeLineItemID" />
+    </Key>
+    <Property Name="StockTakeLineItemID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WithRunners" Type="Boolean" Nullable="false" />
+    <Property Name="IsCasting" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Alloy" Relationship="WahlModel.FK_StockTakeLineItem_Alloy" FromRole="StockTakeLineItem" ToRole="Alloy" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_StockTakeLineItem_Casting" FromRole="StockTakeLineItem" ToRole="Casting" />
+    <NavigationProperty Name="Die" Relationship="WahlModel.FK_StockTakeLineItem_Die" FromRole="StockTakeLineItem" ToRole="Die" />
+    <NavigationProperty Name="Sample" Relationship="WahlModel.FK_StockTakeLineItem_Sample" FromRole="StockTakeLineItem" ToRole="Sample" />
+    <NavigationProperty Name="StockTake" Relationship="WahlModel.FK_StockTakeLineItem_StockTake" FromRole="StockTakeLineItem" ToRole="StockTake" />
+  </EntityType>
+  <EntityType Name="StockTakeVarianceLineItem">
+    <Key>
+      <PropertyRef Name="StockTakeVarianceLineItemID" />
+    </Key>
+    <Property Name="StockTakeVarianceLineItemID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WithRunners" Type="Boolean" Nullable="false" />
+    <Property Name="IsCasting" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Alloy" Relationship="WahlModel.FK_StockTakeVarianceLineItem_Alloy" FromRole="StockTakeVarianceLineItem" ToRole="Alloy" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_StockTakeVarianceLineItem_Casting" FromRole="StockTakeVarianceLineItem" ToRole="Casting" />
+    <NavigationProperty Name="Die" Relationship="WahlModel.FK_StockTakeVarianceLineItem_Die" FromRole="StockTakeVarianceLineItem" ToRole="Die" />
+    <NavigationProperty Name="Sample" Relationship="WahlModel.FK_StockTakeVarianceLineItem_Sample" FromRole="StockTakeVarianceLineItem" ToRole="Sample" />
+    <NavigationProperty Name="StockTake" Relationship="WahlModel.FK_StockTakeVarianceLineItem_StockTake" FromRole="StockTakeVarianceLineItem" ToRole="StockTake" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="SupplierID" />
+    </Key>
+    <Property Name="SupplierID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SupplierName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ContactName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TelephoneNumber" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FaxNumber" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AddressLine1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AddressLine3" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AddressLine4" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PostalCode" Type="Int32" />
+    <Property Name="VatNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="SupplierTypeId" Type="Int32" />
+    <NavigationProperty Name="DeliveryNote" Relationship="WahlModel.FK_DeliveryNote_Suppliers" FromRole="Suppliers" ToRole="DeliveryNote" />
+  </EntityType>
+  <EntityType Name="SupplierType">
+    <Key>
+      <PropertyRef Name="SupplierTypeId" />
+    </Key>
+    <Property Name="SupplierTypeId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierType1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="temp_DataSource">
+    <Key>
+      <PropertyRef Name="DSID" />
+      <PropertyRef Name="Version" />
+    </Key>
+    <Property Name="DSID" Type="Guid" Nullable="false" />
+    <Property Name="ItemID" Type="Guid" />
+    <Property Name="SubscriptionID" Type="Guid" />
+    <Property Name="Name" Type="String" MaxLength="260" Unicode="true" FixedLength="false" />
+    <Property Name="Extension" Type="String" MaxLength="260" Unicode="true" FixedLength="false" />
+    <Property Name="Link" Type="Guid" />
+    <Property Name="CredentialRetrieval" Type="Int32" />
+    <Property Name="Prompt" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ConnectionString" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="OriginalConnectionString" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="OriginalConnectStringExpressionBased" Type="Boolean" />
+    <Property Name="UserName" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Password" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Flags" Type="Int32" />
+    <Property Name="Version" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="temp_Reports">
+    <Key>
+      <PropertyRef Name="ItemID" />
+      <PropertyRef Name="Path" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="CreatedByID" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="ModifiedByID" />
+      <PropertyRef Name="ModifiedDate" />
+      <PropertyRef Name="PolicyID" />
+      <PropertyRef Name="PolicyRoot" />
+      <PropertyRef Name="ExecutionFlag" />
+    </Key>
+    <Property Name="ItemID" Type="Guid" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="425" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="425" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="Guid" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Content" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Intermediate" Type="Guid" />
+    <Property Name="SnapshotDataID" Type="Guid" />
+    <Property Name="LinkSourceID" Type="Guid" />
+    <Property Name="Property" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="Hidden" Type="Boolean" />
+    <Property Name="CreatedByID" Type="Guid" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedByID" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MimeType" Type="String" MaxLength="260" Unicode="true" FixedLength="false" />
+    <Property Name="SnapshotLimit" Type="Int32" />
+    <Property Name="Parameter" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PolicyID" Type="Guid" Nullable="false" />
+    <Property Name="PolicyRoot" Type="Boolean" Nullable="false" />
+    <Property Name="ExecutionFlag" Type="Int32" Nullable="false" />
+    <Property Name="ExecutionTime" Type="DateTime" Precision="3" />
+    <Property Name="SubType" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ComponentID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Roles" Relationship="WahlModel.FK_User_Roles" FromRole="User" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="WeeklyPlan">
+    <Key>
+      <PropertyRef Name="WeeklyPlanID" />
+    </Key>
+    <Property Name="WeeklyPlanID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CaptureDate" Type="DateTime" Precision="0" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Comments" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Casting" Relationship="WahlModel.FK_WeeklyPlan_Casting" FromRole="WeeklyPlan" ToRole="Casting" />
+    <NavigationProperty Name="Company" Relationship="WahlModel.FK_WeeklyPlan_Company" FromRole="WeeklyPlan" ToRole="Company" />
+    <NavigationProperty Name="PurchaseOrder" Relationship="WahlModel.FK_WeeklyPlan_PurchaseOrder" FromRole="WeeklyPlan" ToRole="PurchaseOrder" />
+  </EntityType>
+  <EntityType Name="Year">
+    <Key>
+      <PropertyRef Name="YearID" />
+    </Key>
+    <Property Name="YearID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Year1" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PurchaseOrder_Account">
+    <End Role="Account" Type="WahlModel.Account" Multiplicity="0..1" />
+    <End Role="PurchaseOrder" Type="WahlModel.PurchaseOrder" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Casting_Alloy">
+    <End Role="Alloy" Type="WahlModel.Alloy" Multiplicity="0..1" />
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_DeliveryNoteLineItem_Alloy">
+    <End Role="Alloy" Type="WahlModel.Alloy" Multiplicity="0..1" />
+    <End Role="DeliveryNoteLineItem" Type="WahlModel.DeliveryNoteLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_MonthlyAlloyCost_Alloy">
+    <End Role="Alloy" Type="WahlModel.Alloy" Multiplicity="1" />
+    <End Role="MonthlyAlloyCost" Type="WahlModel.MonthlyAlloyCost" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeLineItem_Alloy">
+    <End Role="Alloy" Type="WahlModel.Alloy" Multiplicity="0..1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.StockTakeLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_Alloy">
+    <End Role="Alloy" Type="WahlModel.Alloy" Multiplicity="0..1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.StockTakeVarianceLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CreditNoteLineItem_Casting">
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="1" />
+    <End Role="CreditNoteLineItem" Type="WahlModel.CreditNoteLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_DailyProductionPerformance_Casting">
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="1" />
+    <End Role="DailyProductionPerformance" Type="WahlModel.DailyProductionPerformance" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_InvoiceLineItem_Casting">
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="1" />
+    <End Role="InvoiceLineItem" Type="WahlModel.InvoiceLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_m_Quotation_m_Casting">
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="0..1" />
+    <End Role="Quotation" Type="WahlModel.Quotation" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_PurchaseOrderLineItems_Casting">
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="1" />
+    <End Role="PurchaseOrderLineItems" Type="WahlModel.PurchaseOrderLineItems" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_SpecialCasting_Casting">
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="1" />
+    <End Role="SpecialCasting" Type="WahlModel.SpecialCasting" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeLineItem_Casting">
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="0..1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.StockTakeLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_Casting">
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="0..1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.StockTakeVarianceLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_WeeklyPlan_Casting">
+    <End Role="Casting" Type="WahlModel.Casting" Multiplicity="0..1" />
+    <End Role="WeeklyPlan" Type="WahlModel.WeeklyPlan" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CreditNote_Company">
+    <End Role="Company" Type="WahlModel.Company" Multiplicity="1" />
+    <End Role="CreditNote" Type="WahlModel.CreditNote" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_DeliveryNote_Company">
+    <End Role="Company" Type="WahlModel.Company" Multiplicity="1" />
+    <End Role="DeliveryNote" Type="WahlModel.DeliveryNote" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Invoice_Company">
+    <End Role="Company" Type="WahlModel.Company" Multiplicity="0..1" />
+    <End Role="Invoice" Type="WahlModel.Invoice" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Quotation_Company">
+    <End Role="Company" Type="WahlModel.Company" Multiplicity="0..1" />
+    <End Role="Quotation" Type="WahlModel.Quotation" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_WeeklyPlan_Company">
+    <End Role="Company" Type="WahlModel.Company" Multiplicity="0..1" />
+    <End Role="WeeklyPlan" Type="WahlModel.WeeklyPlan" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_DeliveryNoteLineItem_Consumable">
+    <End Role="Consumable" Type="WahlModel.Consumable" Multiplicity="0..1" />
+    <End Role="DeliveryNoteLineItem" Type="WahlModel.DeliveryNoteLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CreditNoteLineItem_CreditNote">
+    <End Role="CreditNote" Type="WahlModel.CreditNote" Multiplicity="1" />
+    <End Role="CreditNoteLineItem" Type="WahlModel.CreditNoteLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_DeliveryNote_Suppliers">
+    <End Role="Suppliers" Type="WahlModel.Suppliers" Multiplicity="1" />
+    <End Role="DeliveryNote" Type="WahlModel.DeliveryNote" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_DeliveryNoteLineItem_DeliveryNote">
+    <End Role="DeliveryNote" Type="WahlModel.DeliveryNote" Multiplicity="1" />
+    <End Role="DeliveryNoteLineItem" Type="WahlModel.DeliveryNoteLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeLineItem_Die">
+    <End Role="Die" Type="WahlModel.Die" Multiplicity="0..1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.StockTakeLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_Die">
+    <End Role="Die" Type="WahlModel.Die" Multiplicity="0..1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.StockTakeVarianceLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_InvoiceLineItem_Invoice">
+    <End Role="Invoice" Type="WahlModel.Invoice" Multiplicity="1" />
+    <End Role="InvoiceLineItem" Type="WahlModel.InvoiceLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_InvoiceLineItem_PurchaseOrder">
+    <End Role="PurchaseOrder" Type="WahlModel.PurchaseOrder" Multiplicity="0..1" />
+    <End Role="InvoiceLineItem" Type="WahlModel.InvoiceLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Menu_Menu">
+    <End Role="Menu" Type="WahlModel.Menu" Multiplicity="0..1" />
+    <End Role="Menu1" Type="WahlModel.Menu" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_RolePermission_Menu">
+    <End Role="Menu" Type="WahlModel.Menu" Multiplicity="1" />
+    <End Role="RolePermission" Type="WahlModel.RolePermission" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_MonthlyAlloyCost_MonthlyExpense">
+    <End Role="MonthlyExpense" Type="WahlModel.MonthlyExpense" Multiplicity="1" />
+    <End Role="MonthlyAlloyCost" Type="WahlModel.MonthlyAlloyCost" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_m_Quotation_m_PurchaseOrder">
+    <End Role="PurchaseOrder" Type="WahlModel.PurchaseOrder" Multiplicity="0..1" />
+    <End Role="Quotation" Type="WahlModel.Quotation" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_PurchaseOrderLineItems_PurchaseOrder">
+    <End Role="PurchaseOrder" Type="WahlModel.PurchaseOrder" Multiplicity="1" />
+    <End Role="PurchaseOrderLineItems" Type="WahlModel.PurchaseOrderLineItems" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_WeeklyPlan_PurchaseOrder">
+    <End Role="PurchaseOrder" Type="WahlModel.PurchaseOrder" Multiplicity="0..1" />
+    <End Role="WeeklyPlan" Type="WahlModel.WeeklyPlan" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_RolePermission_Roles">
+    <End Role="Roles" Type="WahlModel.Roles" Multiplicity="1" />
+    <End Role="RolePermission" Type="WahlModel.RolePermission" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_User_Roles">
+    <End Role="Roles" Type="WahlModel.Roles" Multiplicity="1" />
+    <End Role="User" Type="WahlModel.User" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeLineItem_Sample">
+    <End Role="Sample" Type="WahlModel.Sample" Multiplicity="0..1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.StockTakeLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_Sample">
+    <End Role="Sample" Type="WahlModel.Sample" Multiplicity="0..1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.StockTakeVarianceLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeLineItem_StockTake">
+    <End Role="StockTake" Type="WahlModel.StockTake" Multiplicity="1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.StockTakeLineItem" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_StockTake">
+    <End Role="StockTake" Type="WahlModel.StockTake" Multiplicity="1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.StockTakeVarianceLineItem" Multiplicity="*" />
+  </Association>
+</Schema>

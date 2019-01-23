@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ETMSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ETMSModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="ETMSModel.Store.__MigrationHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Clients" EntityType="ETMSModel.Store.Clients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CompanyNews" EntityType="ETMSModel.Store.CompanyNews" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Logs" EntityType="ETMSModel.Store.Logs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Projects" EntityType="ETMSModel.Store.Projects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tasks" EntityType="ETMSModel.Store.Tasks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="ETMSModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_Membership" EntityType="ETMSModel.Store.webpages_Membership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_OAuthMembership" EntityType="ETMSModel.Store.webpages_OAuthMembership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_Roles" EntityType="ETMSModel.Store.webpages_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_UsersInRoles" EntityType="ETMSModel.Store.webpages_UsersInRoles" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_dbo_Logs_dbo_UserProfile_UserProfile_UserId" Association="ETMSModel.Store.FK_dbo_Logs_dbo_UserProfile_UserProfile_UserId">
+      <End Role="UserProfile" EntitySet="UserProfile" />
+      <End Role="Logs" EntitySet="Logs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_RoleId" Association="ETMSModel.Store.fk_RoleId">
+      <End Role="webpages_Roles" EntitySet="webpages_Roles" />
+      <End Role="webpages_UsersInRoles" EntitySet="webpages_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="fk_UserId" Association="ETMSModel.Store.fk_UserId">
+      <End Role="UserProfile" EntitySet="UserProfile" />
+      <End Role="webpages_UsersInRoles" EntitySet="webpages_UsersInRoles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" Nullable="false" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="ClientId" />
+    </Key>
+    <Property Name="ClientId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CompanyNews">
+    <Key>
+      <PropertyRef Name="NewsId" />
+    </Key>
+    <Property Name="NewsId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Heading" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="LogId" />
+    </Key>
+    <Property Name="LogId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Client" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Project" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Task" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Hours" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="UserProfile_UserId" Type="int" />
+    <Property Name="Billable" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="ProjectId" />
+    </Key>
+    <Property Name="ProjectId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tasks">
+    <Key>
+      <PropertyRef Name="TaskId" />
+    </Key>
+    <Property Name="TaskId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleNames" Type="nvarchar(max)" />
+    <Property Name="Initials" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="webpages_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ConfirmationToken" Type="nvarchar" MaxLength="128" />
+    <Property Name="IsConfirmed" Type="bit" />
+    <Property Name="LastPasswordFailureDate" Type="datetime" />
+    <Property Name="PasswordFailuresSinceLastSuccess" Type="int" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordChangedDate" Type="datetime" />
+    <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordVerificationToken" Type="nvarchar" MaxLength="128" />
+    <Property Name="PasswordVerificationTokenExpirationDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="webpages_OAuthMembership">
+    <Key>
+      <PropertyRef Name="Provider" />
+      <PropertyRef Name="ProviderUserId" />
+    </Key>
+    <Property Name="Provider" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="ProviderUserId" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="webpages_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="webpages_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_dbo_Logs_dbo_UserProfile_UserProfile_UserId">
+    <End Role="UserProfile" Type="ETMSModel.Store.UserProfile" Multiplicity="0..1" />
+    <End Role="Logs" Type="ETMSModel.Store.Logs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Logs">
+        <PropertyRef Name="UserProfile_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_RoleId">
+    <End Role="webpages_Roles" Type="ETMSModel.Store.webpages_Roles" Multiplicity="1" />
+    <End Role="webpages_UsersInRoles" Type="ETMSModel.Store.webpages_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="webpages_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="webpages_UsersInRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_UserId">
+    <End Role="UserProfile" Type="ETMSModel.Store.UserProfile" Multiplicity="1" />
+    <End Role="webpages_UsersInRoles" Type="ETMSModel.Store.webpages_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserProfile">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="webpages_UsersInRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

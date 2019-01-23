@@ -1,0 +1,8 @@
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Xml\obj\Release\theDiary.Xml.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Xml\obj\Release\theDiary.Xml.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Xml\bin\Release\theDiary.Xml.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Xml\bin\Release\theDiary.Xml.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Xml\bin\Release\theDiary.System.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Xml\bin\Release\theDiary.System.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Xml\obj\Release\theDiary.Xml.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Xml\obj\Release\theDiary.Xml.pdb

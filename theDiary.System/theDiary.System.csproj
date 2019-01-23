@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{969581E6-8D34-465F-B31A-B457D46A80AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System</RootNamespace>
+    <AssemblyName>theDiary.System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivatorHelper.cs" />
+    <Compile Include="Collections\Generic\Extensions.Dictionary.cs" />
+    <Compile Include="ComponentModel\IgnoreAttribute.cs" />
+    <Compile Include="ComponentModel\INotifyListChanged.cs" />
+    <Compile Include="ComponentModel\INotifyListChanged.Delegates.cs" />
+    <Compile Include="ComponentModel\INotifyListChanging.cs" />
+    <Compile Include="Collections\Generic\UniqueList.cs" />
+    <Compile Include="ComponentModel\INotifyListChanging.Delegates.cs" />
+    <Compile Include="ComponentModel\ListChangedEventArgs.cs" />
+    <Compile Include="ComponentModel\ListChangedTypes.cs" />
+    <Compile Include="ComponentModel\ListChangingEventArgs.cs" />
+    <Compile Include="ComponentModel\ListChangingEventArgs.Generic.cs" />
+    <Compile Include="ComponentModel\ListChangingTypes.cs" />
+    <Compile Include="Configuration\ConfigurationElemementCollection.cs" />
+    <Compile Include="Configuration\ConfigurationKeyValueElement.cs" />
+    <Compile Include="Configuration\ConfigurationKeyValueElementCollection.cs" />
+    <Compile Include="Configuration\ConfigurationScope.cs" />
+    <Compile Include="Configuration\ConfigurationSection.cs" />
+    <Compile Include="Configuration\Extensions.Configuration.cs" />
+    <Compile Include="Diagnostics\Extensions.Process.cs" />
+    <Compile Include="Drawing\Extensions.Drawing.cs" />
+    <Compile Include="Extensions.Object.cs" />
+    <Compile Include="IO\Extensions.FileSystem.cs" />
+    <Compile Include="IO\Extensions.Stream.cs" />
+    <Compile Include="IO\FileEventHandler.cs" />
+    <Compile Include="IO\FileEventArgs.cs" />
+    <Compile Include="IO\FileEvent.cs" />
+    <Compile Include="IO\MimeTypeHelper.cs" />
+    <Compile Include="Net\IPAddressRange.cs" />
+    <Compile Include="Percentage.cs" />
+    <Compile Include="Runtime\Serialization\Extensions.Serialization.cs" />
+    <Compile Include="Collections\Generic\GroupedList.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="Extensions.Attribute.cs" />
+    <Compile Include="Collections\Generic\Extensions.Enumerable.cs" />
+    <Compile Include="Extensions.String.cs" />
+    <Compile Include="Extensions.DateTime.cs" />
+    <Compile Include="Runtime\Extensions.Reflection.cs" />
+    <Compile Include="Security\AuthenticationResult.cs" />
+    <Compile Include="Security\IUser.cs" />
+    <Compile Include="Security\SecurityExtensions.cs" />
+    <Compile Include="Security\Principal\TokenElevationType.cs" />
+    <Compile Include="Security\Principal\TokenInformationClasses.cs" />
+    <Compile Include="Windows\Forms\ApplicationElevationRequirement.cs" />
+    <Compile Include="Windows\Forms\ElevationRequestResult.cs" />
+    <Compile Include="Security\UAC\UACHelper.cs" />
+    <Compile Include="Terminal\Animations\ConsoleSpiner.cs" />
+    <Compile Include="Terminal\Animations\IConsoleAnimation.cs" />
+    <Compile Include="Terminal\ConsoleApp.cs" />
+    <Compile Include="Terminal\Location.cs" />
+    <Compile Include="Windows\Forms\ElevatedApplication.cs" />
+    <Compile Include="Xml\Linq\Extensions.Xml.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runtime\Serialization\IBinarySerializable.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="Text\Extensions.Text.cs" />
+    <Compile Include="Text\ReadablilityCondition.cs" />
+    <Compile Include="Text\Templates\TemplateParser.cs" />
+    <Compile Include="Text\Templates\TemplateSettings.cs" />
+    <Compile Include="Text\Templates\TypeFormatArgument.cs" />
+    <Compile Include="Text\Translation\Extensions.TranslationService.cs" />
+    <Compile Include="Text\Translation\ITranslateDetails.cs" />
+    <Compile Include="Text\Translation\ITranslationHandler.cs" />
+    <Compile Include="Text\Translation\ITranslationService.cs" />
+    <Compile Include="Text\RegularExpressions\RegExPattern.cs" />
+    <Compile Include="Text\StringBuilder.cs" />
+    <Compile Include="Text\Translation\ITranslationService.Delegates.cs" />
+    <Compile Include="Text\Translation\ITranslationServiceAsync.cs" />
+    <Compile Include="Text\Translation\TranslateDetails.cs" />
+    <Compile Include="Text\Translation\TranslateEventArgs.cs" />
+    <Compile Include="Text\Translation\TranslationController.cs" />
+    <Compile Include="Text\Translation\TranslationServiceEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

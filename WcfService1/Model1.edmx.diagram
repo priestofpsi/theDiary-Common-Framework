@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bc99ea5023844ab4a5cb3dd4cc267fb2" Name="Diagram1">
+        <EntityTypeShape EntityType="WahlModel.Account" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Alloy" Width="1.5" PointX="0.75" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Casting" Width="1.5" PointX="3" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.CastingCodedelete" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Company" Width="1.5" PointX="1.5" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Consumable" Width="1.5" PointX="0.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.CreditNote" Width="1.5" PointX="6" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.CreditNoteLineItem" Width="1.5" PointX="8.25" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.DailyProductionPerformance" Width="1.5" PointX="5.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Day" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.DeliveryNote" Width="1.5" PointX="0.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.DeliveryNoteLineItem" Width="1.5" PointX="3" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Die" Width="1.5" PointX="6" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.DieOwnership" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Employee" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.ExternalCustomer" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Inventory" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.InventoryGroup" Width="1.5" PointX="3.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.InventoryType" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Invoice" Width="1.5" PointX="3" PointY="42.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.InvoiceLineItem" Width="1.5" PointX="5.25" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Menu" Width="1.5" PointX="5.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Month" Width="1.5" PointX="9.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.MonthlyAlloyCost" Width="1.5" PointX="3" PointY="38.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.MonthlyExpense" Width="1.5" PointX="0.75" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.PurchaseOrder" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.PurchaseOrderLineItems" Width="1.5" PointX="8.25" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Quotation" Width="1.5" PointX="11.25" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.ReturnToSupplier" Width="1.5" PointX="5.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.RolePermission" Width="1.5" PointX="8" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Roles" Width="1.5" PointX="5.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Sample" Width="1.5" PointX="6" PointY="47.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.SearchField" Width="1.5" PointX="11.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.SearchType" Width="1.5" PointX="11.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.SpecialCasting" Width="1.5" PointX="5.25" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.StockTake" Width="1.5" PointX="6" PointY="51.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.StockTakeLineItem" Width="1.5" PointX="8.25" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.StockTakeVarianceLineItem" Width="1.5" PointX="5.25" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Suppliers" Width="1.5" PointX="1.5" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.SupplierType" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.sysdiagrams" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.temp_DataSource" Width="1.5" PointX="13.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.temp_Reports" Width="1.5" PointX="8.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.User" Width="1.5" PointX="8" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.WeeklyPlan" Width="1.5" PointX="5.25" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="WahlModel.Year" Width="1.5" PointX="10.75" PointY="13.75" IsExpanded="true" />
+        <AssociationConnector Association="WahlModel.FK_PurchaseOrder_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_Casting_Alloy" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_DeliveryNoteLineItem_Alloy" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_MonthlyAlloyCost_Alloy" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeLineItem_Alloy" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeVarianceLineItem_Alloy" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_CreditNoteLineItem_Casting" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_DailyProductionPerformance_Casting" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_InvoiceLineItem_Casting" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_m_Quotation_m_Casting" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_PurchaseOrderLineItems_Casting" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_SpecialCasting_Casting" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeLineItem_Casting" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeVarianceLineItem_Casting" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_WeeklyPlan_Casting" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_CreditNote_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_DeliveryNote_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_Invoice_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_Quotation_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_WeeklyPlan_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_DeliveryNoteLineItem_Consumable" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_CreditNoteLineItem_CreditNote" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_DeliveryNote_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_DeliveryNoteLineItem_DeliveryNote" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeLineItem_Die" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeVarianceLineItem_Die" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_InvoiceLineItem_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_InvoiceLineItem_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_Menu_Menu" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_RolePermission_Menu" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_MonthlyAlloyCost_MonthlyExpense" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_m_Quotation_m_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_PurchaseOrderLineItems_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_WeeklyPlan_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_RolePermission_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_User_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeLineItem_Sample" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeVarianceLineItem_Sample" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeLineItem_StockTake" ManuallyRouted="false" />
+        <AssociationConnector Association="WahlModel.FK_StockTakeVarianceLineItem_StockTake" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

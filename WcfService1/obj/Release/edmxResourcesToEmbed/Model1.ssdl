@@ -1,0 +1,1475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WahlModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="WahlModelStoreContainer">
+    <EntitySet Name="Account" EntityType="WahlModel.Store.Account" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Alloy" EntityType="WahlModel.Store.Alloy" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Casting" EntityType="WahlModel.Store.Casting" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CastingCodedelete" EntityType="WahlModel.Store.CastingCodedelete" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Company" EntityType="WahlModel.Store.Company" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Consumable" EntityType="WahlModel.Store.Consumable" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CreditNote" EntityType="WahlModel.Store.CreditNote" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CreditNoteLineItem" EntityType="WahlModel.Store.CreditNoteLineItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DailyProductionPerformance" EntityType="WahlModel.Store.DailyProductionPerformance" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Day" EntityType="WahlModel.Store.Day" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DeliveryNote" EntityType="WahlModel.Store.DeliveryNote" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DeliveryNoteLineItem" EntityType="WahlModel.Store.DeliveryNoteLineItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Die" EntityType="WahlModel.Store.Die" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DieOwnership" EntityType="WahlModel.Store.DieOwnership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee" EntityType="WahlModel.Store.Employee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExternalCustomer" EntityType="WahlModel.Store.ExternalCustomer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventory" EntityType="WahlModel.Store.Inventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="InventoryGroup" EntityType="WahlModel.Store.InventoryGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="InventoryType" EntityType="WahlModel.Store.InventoryType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Invoice" EntityType="WahlModel.Store.Invoice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="InvoiceLineItem" EntityType="WahlModel.Store.InvoiceLineItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Menu" EntityType="WahlModel.Store.Menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Month" EntityType="WahlModel.Store.Month" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MonthlyAlloyCost" EntityType="WahlModel.Store.MonthlyAlloyCost" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MonthlyExpense" EntityType="WahlModel.Store.MonthlyExpense" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PurchaseOrder" EntityType="WahlModel.Store.PurchaseOrder" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PurchaseOrderLineItems" EntityType="WahlModel.Store.PurchaseOrderLineItems" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Quotation" EntityType="WahlModel.Store.Quotation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ReturnToSupplier" EntityType="WahlModel.Store.ReturnToSupplier" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RolePermission" EntityType="WahlModel.Store.RolePermission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Roles" EntityType="WahlModel.Store.Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sample" EntityType="WahlModel.Store.Sample" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SearchField" EntityType="WahlModel.Store.SearchField" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SearchType" EntityType="WahlModel.Store.SearchType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SpecialCasting" EntityType="WahlModel.Store.SpecialCasting" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StockTake" EntityType="WahlModel.Store.StockTake" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StockTakeLineItem" EntityType="WahlModel.Store.StockTakeLineItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StockTakeVarianceLineItem" EntityType="WahlModel.Store.StockTakeVarianceLineItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Suppliers" EntityType="WahlModel.Store.Suppliers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SupplierType" EntityType="WahlModel.Store.SupplierType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="WahlModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="temp_DataSource" EntityType="WahlModel.Store.temp_DataSource" store:Type="Tables" store:Schema="dbo" store:Name="temp_DataSource">
+      <DefiningQuery>SELECT 
+      [temp_DataSource].[DSID] AS [DSID], 
+      [temp_DataSource].[ItemID] AS [ItemID], 
+      [temp_DataSource].[SubscriptionID] AS [SubscriptionID], 
+      [temp_DataSource].[Name] AS [Name], 
+      [temp_DataSource].[Extension] AS [Extension], 
+      [temp_DataSource].[Link] AS [Link], 
+      [temp_DataSource].[CredentialRetrieval] AS [CredentialRetrieval], 
+      [temp_DataSource].[Prompt] AS [Prompt], 
+      [temp_DataSource].[ConnectionString] AS [ConnectionString], 
+      [temp_DataSource].[OriginalConnectionString] AS [OriginalConnectionString], 
+      [temp_DataSource].[OriginalConnectStringExpressionBased] AS [OriginalConnectStringExpressionBased], 
+      [temp_DataSource].[UserName] AS [UserName], 
+      [temp_DataSource].[Password] AS [Password], 
+      [temp_DataSource].[Flags] AS [Flags], 
+      [temp_DataSource].[Version] AS [Version]
+      FROM [dbo].[temp_DataSource] AS [temp_DataSource]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="temp_Reports" EntityType="WahlModel.Store.temp_Reports" store:Type="Tables" store:Schema="dbo" store:Name="temp_Reports">
+      <DefiningQuery>SELECT 
+      [temp_Reports].[ItemID] AS [ItemID], 
+      [temp_Reports].[Path] AS [Path], 
+      [temp_Reports].[Name] AS [Name], 
+      [temp_Reports].[ParentID] AS [ParentID], 
+      [temp_Reports].[Type] AS [Type], 
+      [temp_Reports].[Content] AS [Content], 
+      [temp_Reports].[Intermediate] AS [Intermediate], 
+      [temp_Reports].[SnapshotDataID] AS [SnapshotDataID], 
+      [temp_Reports].[LinkSourceID] AS [LinkSourceID], 
+      [temp_Reports].[Property] AS [Property], 
+      [temp_Reports].[Description] AS [Description], 
+      [temp_Reports].[Hidden] AS [Hidden], 
+      [temp_Reports].[CreatedByID] AS [CreatedByID], 
+      [temp_Reports].[CreationDate] AS [CreationDate], 
+      [temp_Reports].[ModifiedByID] AS [ModifiedByID], 
+      [temp_Reports].[ModifiedDate] AS [ModifiedDate], 
+      [temp_Reports].[MimeType] AS [MimeType], 
+      [temp_Reports].[SnapshotLimit] AS [SnapshotLimit], 
+      [temp_Reports].[Parameter] AS [Parameter], 
+      [temp_Reports].[PolicyID] AS [PolicyID], 
+      [temp_Reports].[PolicyRoot] AS [PolicyRoot], 
+      [temp_Reports].[ExecutionFlag] AS [ExecutionFlag], 
+      [temp_Reports].[ExecutionTime] AS [ExecutionTime], 
+      [temp_Reports].[SubType] AS [SubType], 
+      [temp_Reports].[ComponentID] AS [ComponentID]
+      FROM [dbo].[temp_Reports] AS [temp_Reports]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="User" EntityType="WahlModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WeeklyPlan" EntityType="WahlModel.Store.WeeklyPlan" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Year" EntityType="WahlModel.Store.Year" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Casting_Alloy" Association="WahlModel.Store.FK_Casting_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="Casting" EntitySet="Casting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CreditNote_Company" Association="WahlModel.Store.FK_CreditNote_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="CreditNote" EntitySet="CreditNote" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CreditNoteLineItem_Casting" Association="WahlModel.Store.FK_CreditNoteLineItem_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="CreditNoteLineItem" EntitySet="CreditNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CreditNoteLineItem_CreditNote" Association="WahlModel.Store.FK_CreditNoteLineItem_CreditNote">
+      <End Role="CreditNote" EntitySet="CreditNote" />
+      <End Role="CreditNoteLineItem" EntitySet="CreditNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DailyProductionPerformance_Casting" Association="WahlModel.Store.FK_DailyProductionPerformance_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="DailyProductionPerformance" EntitySet="DailyProductionPerformance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNote_Company" Association="WahlModel.Store.FK_DeliveryNote_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="DeliveryNote" EntitySet="DeliveryNote" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNote_Suppliers" Association="WahlModel.Store.FK_DeliveryNote_Suppliers">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="DeliveryNote" EntitySet="DeliveryNote" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNoteLineItem_Alloy" Association="WahlModel.Store.FK_DeliveryNoteLineItem_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="DeliveryNoteLineItem" EntitySet="DeliveryNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNoteLineItem_Consumable" Association="WahlModel.Store.FK_DeliveryNoteLineItem_Consumable">
+      <End Role="Consumable" EntitySet="Consumable" />
+      <End Role="DeliveryNoteLineItem" EntitySet="DeliveryNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DeliveryNoteLineItem_DeliveryNote" Association="WahlModel.Store.FK_DeliveryNoteLineItem_DeliveryNote">
+      <End Role="DeliveryNote" EntitySet="DeliveryNote" />
+      <End Role="DeliveryNoteLineItem" EntitySet="DeliveryNoteLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Invoice_Company" Association="WahlModel.Store.FK_Invoice_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Invoice" EntitySet="Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceLineItem_Casting" Association="WahlModel.Store.FK_InvoiceLineItem_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="InvoiceLineItem" EntitySet="InvoiceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceLineItem_Invoice" Association="WahlModel.Store.FK_InvoiceLineItem_Invoice">
+      <End Role="Invoice" EntitySet="Invoice" />
+      <End Role="InvoiceLineItem" EntitySet="InvoiceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceLineItem_PurchaseOrder" Association="WahlModel.Store.FK_InvoiceLineItem_PurchaseOrder">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="InvoiceLineItem" EntitySet="InvoiceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_m_Quotation_m_Casting" Association="WahlModel.Store.FK_m_Quotation_m_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="Quotation" EntitySet="Quotation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_m_Quotation_m_PurchaseOrder" Association="WahlModel.Store.FK_m_Quotation_m_PurchaseOrder">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="Quotation" EntitySet="Quotation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menu_Menu" Association="WahlModel.Store.FK_Menu_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="Menu1" EntitySet="Menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MonthlyAlloyCost_Alloy" Association="WahlModel.Store.FK_MonthlyAlloyCost_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="MonthlyAlloyCost" EntitySet="MonthlyAlloyCost" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MonthlyAlloyCost_MonthlyExpense" Association="WahlModel.Store.FK_MonthlyAlloyCost_MonthlyExpense">
+      <End Role="MonthlyExpense" EntitySet="MonthlyExpense" />
+      <End Role="MonthlyAlloyCost" EntitySet="MonthlyAlloyCost" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrder_Account" Association="WahlModel.Store.FK_PurchaseOrder_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrderLineItems_Casting" Association="WahlModel.Store.FK_PurchaseOrderLineItems_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="PurchaseOrderLineItems" EntitySet="PurchaseOrderLineItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseOrderLineItems_PurchaseOrder" Association="WahlModel.Store.FK_PurchaseOrderLineItems_PurchaseOrder">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="PurchaseOrderLineItems" EntitySet="PurchaseOrderLineItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Quotation_Company" Association="WahlModel.Store.FK_Quotation_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Quotation" EntitySet="Quotation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolePermission_Menu" Association="WahlModel.Store.FK_RolePermission_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="RolePermission" EntitySet="RolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolePermission_Roles" Association="WahlModel.Store.FK_RolePermission_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="RolePermission" EntitySet="RolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SpecialCasting_Casting" Association="WahlModel.Store.FK_SpecialCasting_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="SpecialCasting" EntitySet="SpecialCasting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_Alloy" Association="WahlModel.Store.FK_StockTakeLineItem_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_Casting" Association="WahlModel.Store.FK_StockTakeLineItem_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_Die" Association="WahlModel.Store.FK_StockTakeLineItem_Die">
+      <End Role="Die" EntitySet="Die" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_Sample" Association="WahlModel.Store.FK_StockTakeLineItem_Sample">
+      <End Role="Sample" EntitySet="Sample" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeLineItem_StockTake" Association="WahlModel.Store.FK_StockTakeLineItem_StockTake">
+      <End Role="StockTake" EntitySet="StockTake" />
+      <End Role="StockTakeLineItem" EntitySet="StockTakeLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_Alloy" Association="WahlModel.Store.FK_StockTakeVarianceLineItem_Alloy">
+      <End Role="Alloy" EntitySet="Alloy" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_Casting" Association="WahlModel.Store.FK_StockTakeVarianceLineItem_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_Die" Association="WahlModel.Store.FK_StockTakeVarianceLineItem_Die">
+      <End Role="Die" EntitySet="Die" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_Sample" Association="WahlModel.Store.FK_StockTakeVarianceLineItem_Sample">
+      <End Role="Sample" EntitySet="Sample" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StockTakeVarianceLineItem_StockTake" Association="WahlModel.Store.FK_StockTakeVarianceLineItem_StockTake">
+      <End Role="StockTake" EntitySet="StockTake" />
+      <End Role="StockTakeVarianceLineItem" EntitySet="StockTakeVarianceLineItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Roles" Association="WahlModel.Store.FK_User_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WeeklyPlan_Casting" Association="WahlModel.Store.FK_WeeklyPlan_Casting">
+      <End Role="Casting" EntitySet="Casting" />
+      <End Role="WeeklyPlan" EntitySet="WeeklyPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WeeklyPlan_Company" Association="WahlModel.Store.FK_WeeklyPlan_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="WeeklyPlan" EntitySet="WeeklyPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WeeklyPlan_PurchaseOrder" Association="WahlModel.Store.FK_WeeklyPlan_PurchaseOrder">
+      <End Role="PurchaseOrder" EntitySet="PurchaseOrder" />
+      <End Role="WeeklyPlan" EntitySet="WeeklyPlan" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AccountName" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Alloy">
+    <Key>
+      <PropertyRef Name="AlloyID" />
+    </Key>
+    <Property Name="AlloyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="Quantity" Type="decimal" Scale="2" />
+    <Property Name="Cost" Type="money" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="Weight" Type="decimal" Scale="2" />
+    <Property Name="SandWeight" Type="decimal" Scale="2" />
+    <Property Name="WeightOnHand" Type="decimal" Scale="2" />
+    <Property Name="Unitonhand" Type="decimal" Scale="2" />
+    <Property Name="Runnerweight" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="Casting">
+    <Key>
+      <PropertyRef Name="CastingID" />
+    </Key>
+    <Property Name="CastingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="Company" Type="varchar" MaxLength="50" />
+    <Property Name="Customer" Type="varchar" MaxLength="50" />
+    <Property Name="DieOwnership" Type="varchar" MaxLength="50" />
+    <Property Name="Standard" Type="decimal" Scale="2" />
+    <Property Name="FettlerStandard" Type="decimal" Scale="2" />
+    <Property Name="Cavity" Type="decimal" Scale="2" />
+    <Property Name="Weight" Type="decimal" Scale="2" />
+    <Property Name="RunnerWeight" Type="decimal" Scale="2" />
+    <Property Name="Temperature" Type="decimal" Scale="2" />
+    <Property Name="AlloyID" Type="int" />
+    <Property Name="Sandblasting" Type="decimal" Scale="2" />
+    <Property Name="CoreMaking" Type="decimal" Scale="2" />
+    <Property Name="CoreRemoval" Type="decimal" Scale="2" />
+    <Property Name="WeightCore" Type="decimal" Scale="2" />
+    <Property Name="NumberOfCasters" Type="int" />
+    <Property Name="PrefferedTable" Type="int" />
+    <Property Name="PrefferedFurnace" Type="nvarchar" MaxLength="50" />
+    <Property Name="PrefferedCaster1" Type="int" />
+    <Property Name="PrefferedCaster2" Type="int" />
+    <Property Name="PrefferedCaster3" Type="int" />
+    <Property Name="DieID" Type="int" />
+    <Property Name="SampleID" Type="int" />
+    <Property Name="SandCost" Type="money" />
+    <Property Name="GlueCost" Type="money" />
+    <Property Name="CoreMakerCost" Type="money" />
+    <Property Name="CoreRemoverCost" Type="money" />
+    <Property Name="SandUsed" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="GlueUsed" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="TotalSandCost" Type="money" />
+    <Property Name="DrillingCost" Type="money" />
+    <Property Name="TappingCost" Type="money" />
+    <Property Name="TurningCost" Type="money" />
+    <Property Name="MillingCost" Type="money" />
+    <Property Name="ThreadingCost" Type="money" />
+    <Property Name="TotalMachineryCost" Type="money" />
+    <Property Name="InventoryUnitsOnHand" Type="int" />
+    <Property Name="InventoryUnitsOnHandWithRunners" Type="int" />
+    <Property Name="Deleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="CastingCodedelete">
+    <Key>
+      <PropertyRef Name="CastingCodeID" />
+    </Key>
+    <Property Name="CastingCodeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Consumable">
+    <Key>
+      <PropertyRef Name="ConsumableID" />
+    </Key>
+    <Property Name="ConsumableID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MaterialType" Type="varchar" MaxLength="50" />
+    <Property Name="Quantity" Type="decimal" Scale="3" />
+    <Property Name="Unit" Type="varchar" MaxLength="50" />
+    <Property Name="Weight" Type="decimal" Scale="3" />
+  </EntityType>
+  <EntityType Name="CreditNote">
+    <Key>
+      <PropertyRef Name="CreditNoteID" />
+    </Key>
+    <Property Name="CreditNoteID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="InvoiceDate" Type="date" />
+    <Property Name="ReturnToSupplierID" Type="varchar" MaxLength="20" />
+    <Property Name="TotalQuantity" Type="decimal" Scale="2" />
+    <Property Name="TotalWeight" Type="decimal" Scale="2" />
+    <Property Name="TotalCost" Type="money" />
+  </EntityType>
+  <EntityType Name="CreditNoteLineItem">
+    <Key>
+      <PropertyRef Name="CreditNoteLineItem" />
+    </Key>
+    <Property Name="CreditNoteLineItem" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreditNoteID" Type="int" Nullable="false" />
+    <Property Name="CastingID" Type="int" Nullable="false" />
+    <Property Name="Weight" Type="decimal" Scale="2" />
+    <Property Name="UnitCost" Type="money" />
+    <Property Name="Quantity" Type="decimal" Scale="2" />
+    <Property Name="TotalWeight" Type="decimal" Scale="2" />
+    <Property Name="TotalCost" Type="money" />
+  </EntityType>
+  <EntityType Name="DailyProductionPerformance">
+    <Key>
+      <PropertyRef Name="DailProductionPerformanceID" />
+    </Key>
+    <Property Name="DailProductionPerformanceID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ShiftNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ShiftDate" Type="date" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="CastingID" Type="int" Nullable="false" />
+    <Property Name="Pot" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PerformancePercentage" Type="int" Nullable="false" />
+    <Property Name="Standard" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="Total9" Type="int" />
+    <Property Name="Scrap9" Type="int" />
+    <Property Name="Total11" Type="int" />
+    <Property Name="Scrap11" Type="int" />
+    <Property Name="Total13" Type="int" />
+    <Property Name="Scrap13" Type="int" />
+    <Property Name="Total15" Type="int" />
+    <Property Name="Scrap15" Type="int" />
+    <Property Name="Total16" Type="int" />
+    <Property Name="Scrap16" Type="int" />
+    <Property Name="TotalTotal" Type="int" />
+    <Property Name="TotalScrap" Type="int" />
+    <Property Name="Comment" Type="varchar" MaxLength="255" />
+    <Property Name="ScrapFettling" Type="int" />
+    <Property Name="ScrapDrillingAndT" Type="int" />
+    <Property Name="ScrapQCBefore" Type="int" />
+    <Property Name="ScrapQCMandla" Type="int" />
+    <Property Name="CastingWeight" Type="decimal" Scale="2" />
+    <Property Name="TotalWeight" Type="decimal" Scale="2" />
+    <Property Name="ScrapManufacturing" Type="int" />
+    <Property Name="ShiftTypeModifier" Type="int" />
+    <Property Name="ShiftTypeId" Type="int" />
+    <Property Name="AdjustedStandard" Type="decimal" Scale="2" />
+    <Property Name="TotalCost" Type="decimal" Precision="12" Scale="2" />
+  </EntityType>
+  <EntityType Name="Day">
+    <Key>
+      <PropertyRef Name="DayID" />
+    </Key>
+    <Property Name="DayID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Day" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DeliveryNote">
+    <Key>
+      <PropertyRef Name="DeliveryNoteID" />
+    </Key>
+    <Property Name="DeliveryNoteID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="SupplierInvoiceNo" Type="varchar" MaxLength="15" />
+    <Property Name="SupplierID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DeliveryNoteLineItem">
+    <Key>
+      <PropertyRef Name="DeliveryNoteLineItemID" />
+    </Key>
+    <Property Name="DeliveryNoteLineItemID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DeliveryNoteID" Type="bigint" Nullable="false" />
+    <Property Name="AlloyID" Type="int" />
+    <Property Name="ConsumableID" Type="int" />
+    <Property Name="UnitPrice" Type="money" />
+    <Property Name="Quantity" Type="decimal" Scale="3" />
+    <Property Name="TotalCost" Type="money" />
+  </EntityType>
+  <EntityType Name="Die">
+    <Key>
+      <PropertyRef Name="DieID" />
+    </Key>
+    <Property Name="DieID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InvID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Quantity" Type="float" />
+    <Property Name="Cost" Type="float" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="20" />
+    <Property Name="Weight" Type="float" />
+    <Property Name="SandWeight" Type="float" />
+    <Property Name="Weightonhand" Type="float" />
+    <Property Name="Unitonhand" Type="float" />
+    <Property Name="Runnerweight" Type="float" />
+  </EntityType>
+  <EntityType Name="DieOwnership">
+    <Key>
+      <PropertyRef Name="DieOwnershipID" />
+    </Key>
+    <Property Name="DieOwnershipID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DieOwnershipDescription" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="IDNumber" Type="varchar" MaxLength="50" />
+    <Property Name="ClockNo" Type="varchar" MaxLength="50" />
+    <Property Name="TeamLeader" Type="bit" />
+  </EntityType>
+  <EntityType Name="ExternalCustomer">
+    <Key>
+      <PropertyRef Name="ExternalCustomerID" />
+    </Key>
+    <Property Name="ExternalCustomerID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="InventoryID" />
+    </Key>
+    <Property Name="InventoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Unit" Type="varchar" MaxLength="50" />
+    <Property Name="Weight" Type="decimal" Scale="3" />
+    <Property Name="UnitCost" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="InventoryGroup">
+    <Key>
+      <PropertyRef Name="InventoryGroupID" />
+    </Key>
+    <Property Name="InventoryGroupID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InventoryGroupDescription" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="InventoryType">
+    <Key>
+      <PropertyRef Name="InventoryTypeID" />
+    </Key>
+    <Property Name="InventoryTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InventoryTypeDescription" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceNumber" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="InventoryID" Type="int" />
+    <Property Name="CastingID" Type="nchar" MaxLength="10" />
+    <Property Name="Account" Type="varchar" MaxLength="20" />
+    <Property Name="AddressLine1" Type="varchar" MaxLength="100" />
+    <Property Name="AddressLine2" Type="varchar" MaxLength="100" />
+    <Property Name="CheckedByOfficer" Type="varchar" MaxLength="20" />
+    <Property Name="CheckedDate" Type="datetime" />
+    <Property Name="DeliveryDate" Type="datetime" />
+    <Property Name="Fax" Type="varchar" MaxLength="15" />
+    <Property Name="OrderNumber" Type="varchar" MaxLength="20" />
+    <Property Name="PostalCode" Type="varchar" MaxLength="5" />
+    <Property Name="ReceivedBy" Type="varchar" MaxLength="20" />
+    <Property Name="ReceivedDate" Type="datetime" />
+    <Property Name="SupplierID" Type="int" />
+    <Property Name="SupplierInvoiceNumber" Type="varchar" MaxLength="20" />
+    <Property Name="Telephone" Type="varchar" MaxLength="15" />
+    <Property Name="TotalNet" Type="decimal" Scale="2" />
+    <Property Name="VatNo" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="InvoiceLineItem">
+    <Key>
+      <PropertyRef Name="InvoiceLineItemID" />
+    </Key>
+    <Property Name="InvoiceLineItemID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceID" Type="int" Nullable="false" />
+    <Property Name="CastingID" Type="int" Nullable="false" />
+    <Property Name="Weight" Type="decimal" Scale="2" />
+    <Property Name="UnitCost" Type="money" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="TotalWeight" Type="decimal" Scale="2" />
+    <Property Name="TotalCost" Type="money" />
+    <Property Name="PurchaseOrderID" Type="int" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Header" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ParentId" Type="uniqueidentifier" />
+    <Property Name="MenuOrder" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Month">
+    <Key>
+      <PropertyRef Name="MonthNumber" />
+    </Key>
+    <Property Name="MonthNumber" Type="int" Nullable="false" />
+    <Property Name="Month" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MonthlyAlloyCost">
+    <Key>
+      <PropertyRef Name="MonthlyAlloyCostID" />
+    </Key>
+    <Property Name="MonthlyAlloyCostID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MonthlyExpensesID" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Month" Type="int" Nullable="false" />
+    <Property Name="AlloyID" Type="int" Nullable="false" />
+    <Property Name="Cost" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="StartingDate" Type="datetime" />
+    <Property Name="EndingDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MonthlyExpense">
+    <Key>
+      <PropertyRef Name="MonthlyExpensesID" />
+    </Key>
+    <Property Name="MonthlyExpensesID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Month" Type="int" />
+    <Property Name="TotalGas" Type="money" />
+    <Property Name="TotalElectricity" Type="money" />
+    <Property Name="TotalWater" Type="money" />
+    <Property Name="MachineryService" Type="money" />
+    <Property Name="Labour" Type="money" />
+    <Property Name="SafetyClothing" Type="money" />
+    <Property Name="TotalStandardMonthlyCosts" Type="money" />
+    <Property Name="CastingStdPercentagePerDay" Type="money" />
+    <Property Name="CasterPerDay" Type="money" />
+    <Property Name="FettlerPerDay" Type="money" />
+    <Property Name="SandBlasterPerDay" Type="money" />
+    <Property Name="SandCoreMakerPerDay" Type="money" />
+    <Property Name="SandCoreRemoverPerDay" Type="money" />
+    <Property Name="GeneralExpenses" Type="money" />
+    <Property Name="TotalLabourCosts" Type="money" />
+    <Property Name="MetalLM4PerKg" Type="money" />
+    <Property Name="MetalLM6PerKg" Type="money" />
+    <Property Name="MetalLM9PerKg" Type="money" />
+    <Property Name="MetalLM25PerKg" Type="money" />
+    <Property Name="MetalZincPerKg" Type="money" />
+    <Property Name="CostOfSandPerKg" Type="money" />
+    <Property Name="GasAt" Type="money" Nullable="false" />
+    <Property Name="ElectricityAt" Type="money" Nullable="false" />
+    <Property Name="StartingDate" Type="datetime" />
+    <Property Name="EndingDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PurchaseOrder">
+    <Key>
+      <PropertyRef Name="PurchaseOrderID" />
+    </Key>
+    <Property Name="PurchaseOrderID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AddressLine1" Type="varchar" MaxLength="50" />
+    <Property Name="AddressLine2" Type="varchar" MaxLength="50" />
+    <Property Name="AddressLine3" Type="varchar" MaxLength="50" />
+    <Property Name="TaxRegistrationNumber" Type="nvarchar" MaxLength="20" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="ContactName" Type="varchar" MaxLength="50" />
+    <Property Name="AccountID" Type="int" />
+    <Property Name="From" Type="varchar" MaxLength="50" />
+    <Property Name="Date" Type="date" />
+    <Property Name="ExternalReference" Type="varchar" MaxLength="50" />
+    <Property Name="OrderPlacedBy" Type="varchar" MaxLength="50" />
+    <Property Name="DeliveryDate" Type="date" />
+    <Property Name="OrderID" Type="varchar" MaxLength="50" />
+    <Property Name="ReceivedBy" Type="varchar" MaxLength="50" />
+    <Property Name="DateReceived" Type="date" />
+    <Property Name="Signed" Type="varchar" MaxLength="50" />
+    <Property Name="TotalExcl" Type="decimal" />
+    <Property Name="Tax" Type="decimal" />
+    <Property Name="TotalIncl" Type="decimal" />
+    <Property Name="Discount" Type="decimal" />
+    <Property Name="GrandTotal" Type="decimal" />
+  </EntityType>
+  <EntityType Name="PurchaseOrderLineItems">
+    <Key>
+      <PropertyRef Name="PurchaseOrderLineItemID" />
+    </Key>
+    <Property Name="PurchaseOrderLineItemID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseOrderID" Type="int" Nullable="false" />
+    <Property Name="CastingID" Type="int" Nullable="false" />
+    <Property Name="Ordered" Type="int" />
+    <Property Name="QuantityUnit" Type="int" />
+    <Property Name="PriceExDiscount" Type="money" />
+    <Property Name="Tax" Type="money" />
+    <Property Name="TotalExcl" Type="money" />
+    <Property Name="TotalIncl" Type="money" />
+  </EntityType>
+  <EntityType Name="Quotation">
+    <Key>
+      <PropertyRef Name="QuotationID" />
+    </Key>
+    <Property Name="QuotationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="date" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="CastingID" Type="int" />
+    <Property Name="Weight" Type="decimal" Scale="2" />
+    <Property Name="Cavities" Type="decimal" Scale="2" />
+    <Property Name="RunnerWeight" Type="decimal" Scale="2" />
+    <Property Name="MetalContent" Type="decimal" Scale="2" />
+    <Property Name="MetalPrice" Type="decimal" Scale="2" />
+    <Property Name="MetalTotal" Type="decimal" Scale="2" />
+    <Property Name="Electricity" Type="decimal" Scale="2" />
+    <Property Name="ElectricityTotal" Type="decimal" Scale="2" />
+    <Property Name="Gas" Type="decimal" Scale="2" />
+    <Property Name="GasTotal" Type="decimal" Scale="2" />
+    <Property Name="GeneralExpenses" Type="decimal" Scale="2" />
+    <Property Name="GeneralExpensesCastingCount" Type="decimal" Scale="2" />
+    <Property Name="GeneralExpensesTotal" Type="decimal" Scale="2" />
+    <Property Name="Caster" Type="decimal" Scale="2" />
+    <Property Name="CasterCastingCount" Type="decimal" Scale="2" />
+    <Property Name="CasterTotal" Type="decimal" Scale="2" />
+    <Property Name="Fettler" Type="decimal" Scale="2" />
+    <Property Name="FettlerCastingCount" Type="decimal" Scale="2" />
+    <Property Name="FettlerTotal" Type="decimal" Scale="2" />
+    <Property Name="TotalCastingCost" Type="decimal" Scale="2" />
+    <Property Name="Drilling" Type="decimal" Scale="2" />
+    <Property Name="Tapping" Type="decimal" Scale="2" />
+    <Property Name="Turning" Type="decimal" Scale="2" />
+    <Property Name="Milling" Type="decimal" Scale="2" />
+    <Property Name="Threading" Type="decimal" Scale="2" />
+    <Property Name="TotalMachineryCost" Type="decimal" Scale="2" />
+    <Property Name="Sandblasting" Type="decimal" Scale="2" />
+    <Property Name="SandblastingCastingCount" Type="decimal" Scale="2" />
+    <Property Name="SandblastingTotal" Type="decimal" Scale="2" />
+    <Property Name="CoreMaker" Type="decimal" Scale="2" />
+    <Property Name="CoreMakerCoreCount" Type="decimal" Scale="2" />
+    <Property Name="CoreMakerTotal" Type="decimal" Scale="2" />
+    <Property Name="CoreRemover" Type="decimal" Scale="2" />
+    <Property Name="CoreRemoverCastingCount" Type="decimal" Scale="2" />
+    <Property Name="CoreRemoverTotal" Type="decimal" Scale="2" />
+    <Property Name="SandUsed" Type="decimal" Scale="2" />
+    <Property Name="SandPrice" Type="decimal" Scale="2" />
+    <Property Name="SandTotal" Type="decimal" Scale="2" />
+    <Property Name="TotalSandCost" Type="decimal" Scale="2" />
+    <Property Name="CurrentPrice" Type="decimal" Scale="2" />
+    <Property Name="PercentageDifference" Type="decimal" Scale="2" />
+    <Property Name="TotalCost" Type="decimal" Scale="2" />
+    <Property Name="PurchaseOrderID" Type="int" />
+    <Property Name="StandardPercentage" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="ReturnToSupplier">
+    <Key>
+      <PropertyRef Name="ReturnToSupplierID" />
+    </Key>
+    <Property Name="ReturnToSupplierID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ExternalCustomerID" Type="int" />
+    <Property Name="InternalCustomerID" Type="int" />
+    <Property Name="To" Type="varchar" MaxLength="50" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="CastingID" Type="int" />
+    <Property Name="CompanyID" Type="int" />
+  </EntityType>
+  <EntityType Name="RolePermission">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="PermissionID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="MenuId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Allowed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleDescription" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sample">
+    <Key>
+      <PropertyRef Name="SampleID" />
+    </Key>
+    <Property Name="SampleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InvID" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="Quantity" Type="float" />
+    <Property Name="Cost" Type="float" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="20" />
+    <Property Name="Weight" Type="float" />
+    <Property Name="SandWeight" Type="float" />
+    <Property Name="Weightonhand" Type="float" />
+    <Property Name="Unitonhand" Type="float" />
+    <Property Name="Runnerweight" Type="float" />
+  </EntityType>
+  <EntityType Name="SearchField">
+    <Key>
+      <PropertyRef Name="SearchFieldId" />
+    </Key>
+    <Property Name="SearchFieldId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SearchTypeId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FieldName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SearchType">
+    <Key>
+      <PropertyRef Name="SearchTypeId" />
+    </Key>
+    <Property Name="SearchTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SpecialCasting">
+    <Key>
+      <PropertyRef Name="SpecialCastingId" />
+    </Key>
+    <Property Name="SpecialCastingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CastingId" Type="int" Nullable="false" />
+    <Property Name="OldCastingID" Type="int" />
+    <Property Name="SandCasting" Type="bit" />
+    <Property Name="SandCore" Type="bit" />
+    <Property Name="SandBlasted" Type="bit" />
+    <Property Name="BrassInsert" Type="bit" />
+    <Property Name="AluminiumInsert" Type="bit" />
+    <Property Name="StainlessSteelInsert" Type="bit" />
+    <Property Name="Hydraulics" Type="bit" />
+    <Property Name="HeatTreated" Type="bit" />
+    <Property Name="SandCup" Type="bit" />
+    <Property Name="CupsFixed" Type="int" />
+    <Property Name="CupsLoose" Type="int" />
+    <Property Name="Cores" Type="int" />
+    <Property Name="CoresCollapsible" Type="int" />
+    <Property Name="BaseLoose" Type="int" />
+    <Property Name="BaseFixed" Type="int" />
+    <Property Name="DiePieces" Type="int" />
+    <Property Name="KnockOutPins" Type="int" />
+    <Property Name="Pins" Type="int" />
+    <Property Name="Wedges" Type="int" />
+    <Property Name="Slides" Type="int" />
+    <Property Name="ClampsQty" Type="int" />
+    <Property Name="ClampsSize" Type="nvarchar" MaxLength="10" />
+    <Property Name="HammersQty" Type="int" />
+    <Property Name="HammersSize" Type="nvarchar" MaxLength="10" />
+    <Property Name="PryeBarsQty" Type="int" />
+    <Property Name="PryeBarsSize" Type="nvarchar" MaxLength="10" />
+    <Property Name="Forks" Type="int" />
+    <Property Name="Hooks" Type="int" />
+    <Property Name="Runners" Type="int" />
+    <Property Name="Water" Type="int" />
+    <Property Name="AirGuns" Type="int" />
+    <Property Name="Pliers" Type="int" />
+    <Property Name="DieCoat34Used" Type="bit" />
+    <Property Name="DieCoat34Where" Type="varchar" MaxLength="50" />
+    <Property Name="DieCoat39Used" Type="bit" />
+    <Property Name="DieCoat39Where" Type="varchar" MaxLength="50" />
+    <Property Name="DieCoat140Used" Type="bit" />
+    <Property Name="DieCoat140Where" Type="varchar" MaxLength="50" />
+    <Property Name="DieCoat11Used" Type="bit" />
+    <Property Name="DieCoat11Where" Type="varchar" MaxLength="50" />
+    <Property Name="LubixOilUsed" Type="bit" />
+    <Property Name="LubixOilWhere" Type="varchar" MaxLength="50" />
+    <Property Name="OtherUsed" Type="bit" />
+    <Property Name="OtherWhere" Type="varchar" MaxLength="50" />
+    <Property Name="CastingInstructions" Type="varchar" MaxLength="1024" />
+    <Property Name="HeatingInstructions" Type="varchar" MaxLength="1024" />
+    <Property Name="SprayingInstructions" Type="varchar" MaxLength="1024" />
+    <Property Name="OtherInstructions" Type="varchar" MaxLength="1024" />
+  </EntityType>
+  <EntityType Name="StockTake">
+    <Key>
+      <PropertyRef Name="StockTakeID" />
+    </Key>
+    <Property Name="StockTakeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Finalized" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StockTakeLineItem">
+    <Key>
+      <PropertyRef Name="StockTakeLineItemID" />
+    </Key>
+    <Property Name="StockTakeLineItemID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StockTakeID" Type="int" Nullable="false" />
+    <Property Name="CastingID" Type="int" />
+    <Property Name="SampleID" Type="int" />
+    <Property Name="DieID" Type="int" />
+    <Property Name="AlloyID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Weight" Type="decimal" Scale="2" />
+    <Property Name="WithRunners" Type="bit" Nullable="false" />
+    <Property Name="IsCasting" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StockTakeVarianceLineItem">
+    <Key>
+      <PropertyRef Name="StockTakeVarianceLineItemID" />
+    </Key>
+    <Property Name="StockTakeVarianceLineItemID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StockTakeID" Type="int" Nullable="false" />
+    <Property Name="CastingID" Type="int" />
+    <Property Name="SampleID" Type="int" />
+    <Property Name="DieID" Type="int" />
+    <Property Name="AlloyID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Weight" Type="decimal" Scale="2" />
+    <Property Name="WithRunners" Type="bit" Nullable="false" />
+    <Property Name="IsCasting" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="SupplierID" />
+    </Key>
+    <Property Name="SupplierID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="50" />
+    <Property Name="ContactName" Type="varchar" MaxLength="50" />
+    <Property Name="TelephoneNumber" Type="varchar" MaxLength="50" />
+    <Property Name="FaxNumber" Type="varchar" MaxLength="50" />
+    <Property Name="AddressLine1" Type="varchar" MaxLength="50" />
+    <Property Name="AddressLine2" Type="varchar" MaxLength="50" />
+    <Property Name="AddressLine3" Type="varchar" MaxLength="50" />
+    <Property Name="AddressLine4" Type="varchar" MaxLength="50" />
+    <Property Name="PostalCode" Type="int" />
+    <Property Name="VatNumber" Type="varchar" MaxLength="20" />
+    <Property Name="SupplierTypeId" Type="int" />
+  </EntityType>
+  <EntityType Name="SupplierType">
+    <Key>
+      <PropertyRef Name="SupplierTypeId" />
+    </Key>
+    <Property Name="SupplierTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Wahl.dbo.temp_DataSource' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="temp_DataSource">
+    <Key>
+      <PropertyRef Name="DSID" />
+      <PropertyRef Name="Version" />
+    </Key>
+    <Property Name="DSID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ItemID" Type="uniqueidentifier" />
+    <Property Name="SubscriptionID" Type="uniqueidentifier" />
+    <Property Name="Name" Type="nvarchar" MaxLength="260" />
+    <Property Name="Extension" Type="nvarchar" MaxLength="260" />
+    <Property Name="Link" Type="uniqueidentifier" />
+    <Property Name="CredentialRetrieval" Type="int" />
+    <Property Name="Prompt" Type="ntext" />
+    <Property Name="ConnectionString" Type="image" />
+    <Property Name="OriginalConnectionString" Type="image" />
+    <Property Name="OriginalConnectStringExpressionBased" Type="bit" />
+    <Property Name="UserName" Type="image" />
+    <Property Name="Password" Type="image" />
+    <Property Name="Flags" Type="int" />
+    <Property Name="Version" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Wahl.dbo.temp_Reports' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="temp_Reports">
+    <Key>
+      <PropertyRef Name="ItemID" />
+      <PropertyRef Name="Path" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="CreatedByID" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="ModifiedByID" />
+      <PropertyRef Name="ModifiedDate" />
+      <PropertyRef Name="PolicyID" />
+      <PropertyRef Name="PolicyRoot" />
+      <PropertyRef Name="ExecutionFlag" />
+    </Key>
+    <Property Name="ItemID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="425" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="425" />
+    <Property Name="ParentID" Type="uniqueidentifier" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="Content" Type="image" />
+    <Property Name="Intermediate" Type="uniqueidentifier" />
+    <Property Name="SnapshotDataID" Type="uniqueidentifier" />
+    <Property Name="LinkSourceID" Type="uniqueidentifier" />
+    <Property Name="Property" Type="ntext" />
+    <Property Name="Description" Type="nvarchar" MaxLength="512" />
+    <Property Name="Hidden" Type="bit" />
+    <Property Name="CreatedByID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedByID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="MimeType" Type="nvarchar" MaxLength="260" />
+    <Property Name="SnapshotLimit" Type="int" />
+    <Property Name="Parameter" Type="ntext" />
+    <Property Name="PolicyID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PolicyRoot" Type="bit" Nullable="false" />
+    <Property Name="ExecutionFlag" Type="int" Nullable="false" />
+    <Property Name="ExecutionTime" Type="datetime" />
+    <Property Name="SubType" Type="nvarchar" MaxLength="128" />
+    <Property Name="ComponentID" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WeeklyPlan">
+    <Key>
+      <PropertyRef Name="WeeklyPlanID" />
+    </Key>
+    <Property Name="WeeklyPlanID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CaptureDate" Type="date" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="PurchaseOrderID" Type="int" />
+    <Property Name="CastingID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Comments" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Year">
+    <Key>
+      <PropertyRef Name="YearID" />
+    </Key>
+    <Property Name="YearID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Casting_Alloy">
+    <End Role="Alloy" Type="WahlModel.Store.Alloy" Multiplicity="0..1" />
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alloy">
+        <PropertyRef Name="AlloyID" />
+      </Principal>
+      <Dependent Role="Casting">
+        <PropertyRef Name="AlloyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CreditNote_Company">
+    <End Role="Company" Type="WahlModel.Store.Company" Multiplicity="1" />
+    <End Role="CreditNote" Type="WahlModel.Store.CreditNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="CreditNote">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CreditNoteLineItem_Casting">
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="1" />
+    <End Role="CreditNoteLineItem" Type="WahlModel.Store.CreditNoteLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casting">
+        <PropertyRef Name="CastingID" />
+      </Principal>
+      <Dependent Role="CreditNoteLineItem">
+        <PropertyRef Name="CastingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CreditNoteLineItem_CreditNote">
+    <End Role="CreditNote" Type="WahlModel.Store.CreditNote" Multiplicity="1" />
+    <End Role="CreditNoteLineItem" Type="WahlModel.Store.CreditNoteLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CreditNote">
+        <PropertyRef Name="CreditNoteID" />
+      </Principal>
+      <Dependent Role="CreditNoteLineItem">
+        <PropertyRef Name="CreditNoteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DailyProductionPerformance_Casting">
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="1" />
+    <End Role="DailyProductionPerformance" Type="WahlModel.Store.DailyProductionPerformance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casting">
+        <PropertyRef Name="CastingID" />
+      </Principal>
+      <Dependent Role="DailyProductionPerformance">
+        <PropertyRef Name="CastingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DeliveryNote_Company">
+    <End Role="Company" Type="WahlModel.Store.Company" Multiplicity="1" />
+    <End Role="DeliveryNote" Type="WahlModel.Store.DeliveryNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="DeliveryNote">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DeliveryNote_Suppliers">
+    <End Role="Suppliers" Type="WahlModel.Store.Suppliers" Multiplicity="1" />
+    <End Role="DeliveryNote" Type="WahlModel.Store.DeliveryNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="DeliveryNote">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DeliveryNoteLineItem_Alloy">
+    <End Role="Alloy" Type="WahlModel.Store.Alloy" Multiplicity="0..1" />
+    <End Role="DeliveryNoteLineItem" Type="WahlModel.Store.DeliveryNoteLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alloy">
+        <PropertyRef Name="AlloyID" />
+      </Principal>
+      <Dependent Role="DeliveryNoteLineItem">
+        <PropertyRef Name="AlloyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DeliveryNoteLineItem_Consumable">
+    <End Role="Consumable" Type="WahlModel.Store.Consumable" Multiplicity="0..1" />
+    <End Role="DeliveryNoteLineItem" Type="WahlModel.Store.DeliveryNoteLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consumable">
+        <PropertyRef Name="ConsumableID" />
+      </Principal>
+      <Dependent Role="DeliveryNoteLineItem">
+        <PropertyRef Name="ConsumableID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DeliveryNoteLineItem_DeliveryNote">
+    <End Role="DeliveryNote" Type="WahlModel.Store.DeliveryNote" Multiplicity="1" />
+    <End Role="DeliveryNoteLineItem" Type="WahlModel.Store.DeliveryNoteLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DeliveryNote">
+        <PropertyRef Name="DeliveryNoteID" />
+      </Principal>
+      <Dependent Role="DeliveryNoteLineItem">
+        <PropertyRef Name="DeliveryNoteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Invoice_Company">
+    <End Role="Company" Type="WahlModel.Store.Company" Multiplicity="0..1" />
+    <End Role="Invoice" Type="WahlModel.Store.Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceLineItem_Casting">
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="1" />
+    <End Role="InvoiceLineItem" Type="WahlModel.Store.InvoiceLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casting">
+        <PropertyRef Name="CastingID" />
+      </Principal>
+      <Dependent Role="InvoiceLineItem">
+        <PropertyRef Name="CastingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceLineItem_Invoice">
+    <End Role="Invoice" Type="WahlModel.Store.Invoice" Multiplicity="1" />
+    <End Role="InvoiceLineItem" Type="WahlModel.Store.InvoiceLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="InvoiceID" />
+      </Principal>
+      <Dependent Role="InvoiceLineItem">
+        <PropertyRef Name="InvoiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceLineItem_PurchaseOrder">
+    <End Role="PurchaseOrder" Type="WahlModel.Store.PurchaseOrder" Multiplicity="0..1" />
+    <End Role="InvoiceLineItem" Type="WahlModel.Store.InvoiceLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrder">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Principal>
+      <Dependent Role="InvoiceLineItem">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_m_Quotation_m_Casting">
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="0..1" />
+    <End Role="Quotation" Type="WahlModel.Store.Quotation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casting">
+        <PropertyRef Name="CastingID" />
+      </Principal>
+      <Dependent Role="Quotation">
+        <PropertyRef Name="CastingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_m_Quotation_m_PurchaseOrder">
+    <End Role="PurchaseOrder" Type="WahlModel.Store.PurchaseOrder" Multiplicity="0..1" />
+    <End Role="Quotation" Type="WahlModel.Store.Quotation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrder">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Principal>
+      <Dependent Role="Quotation">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Menu_Menu">
+    <End Role="Menu" Type="WahlModel.Store.Menu" Multiplicity="0..1" />
+    <End Role="Menu1" Type="WahlModel.Store.Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="MenuId" />
+      </Principal>
+      <Dependent Role="Menu1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MonthlyAlloyCost_Alloy">
+    <End Role="Alloy" Type="WahlModel.Store.Alloy" Multiplicity="1" />
+    <End Role="MonthlyAlloyCost" Type="WahlModel.Store.MonthlyAlloyCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alloy">
+        <PropertyRef Name="AlloyID" />
+      </Principal>
+      <Dependent Role="MonthlyAlloyCost">
+        <PropertyRef Name="AlloyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MonthlyAlloyCost_MonthlyExpense">
+    <End Role="MonthlyExpense" Type="WahlModel.Store.MonthlyExpense" Multiplicity="1" />
+    <End Role="MonthlyAlloyCost" Type="WahlModel.Store.MonthlyAlloyCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MonthlyExpense">
+        <PropertyRef Name="MonthlyExpensesID" />
+      </Principal>
+      <Dependent Role="MonthlyAlloyCost">
+        <PropertyRef Name="MonthlyExpensesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrder_Account">
+    <End Role="Account" Type="WahlModel.Store.Account" Multiplicity="0..1" />
+    <End Role="PurchaseOrder" Type="WahlModel.Store.PurchaseOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="PurchaseOrder">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrderLineItems_Casting">
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="1" />
+    <End Role="PurchaseOrderLineItems" Type="WahlModel.Store.PurchaseOrderLineItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casting">
+        <PropertyRef Name="CastingID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderLineItems">
+        <PropertyRef Name="CastingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseOrderLineItems_PurchaseOrder">
+    <End Role="PurchaseOrder" Type="WahlModel.Store.PurchaseOrder" Multiplicity="1" />
+    <End Role="PurchaseOrderLineItems" Type="WahlModel.Store.PurchaseOrderLineItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrder">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Principal>
+      <Dependent Role="PurchaseOrderLineItems">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Quotation_Company">
+    <End Role="Company" Type="WahlModel.Store.Company" Multiplicity="0..1" />
+    <End Role="Quotation" Type="WahlModel.Store.Quotation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="Quotation">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolePermission_Menu">
+    <End Role="Menu" Type="WahlModel.Store.Menu" Multiplicity="1" />
+    <End Role="RolePermission" Type="WahlModel.Store.RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="MenuId" />
+      </Principal>
+      <Dependent Role="RolePermission">
+        <PropertyRef Name="MenuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolePermission_Roles">
+    <End Role="Roles" Type="WahlModel.Store.Roles" Multiplicity="1" />
+    <End Role="RolePermission" Type="WahlModel.Store.RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="RolePermission">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SpecialCasting_Casting">
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="1" />
+    <End Role="SpecialCasting" Type="WahlModel.Store.SpecialCasting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casting">
+        <PropertyRef Name="CastingID" />
+      </Principal>
+      <Dependent Role="SpecialCasting">
+        <PropertyRef Name="CastingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeLineItem_Alloy">
+    <End Role="Alloy" Type="WahlModel.Store.Alloy" Multiplicity="0..1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.Store.StockTakeLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alloy">
+        <PropertyRef Name="AlloyID" />
+      </Principal>
+      <Dependent Role="StockTakeLineItem">
+        <PropertyRef Name="AlloyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeLineItem_Casting">
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="0..1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.Store.StockTakeLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casting">
+        <PropertyRef Name="CastingID" />
+      </Principal>
+      <Dependent Role="StockTakeLineItem">
+        <PropertyRef Name="CastingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeLineItem_Die">
+    <End Role="Die" Type="WahlModel.Store.Die" Multiplicity="0..1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.Store.StockTakeLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Die">
+        <PropertyRef Name="DieID" />
+      </Principal>
+      <Dependent Role="StockTakeLineItem">
+        <PropertyRef Name="DieID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeLineItem_Sample">
+    <End Role="Sample" Type="WahlModel.Store.Sample" Multiplicity="0..1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.Store.StockTakeLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sample">
+        <PropertyRef Name="SampleID" />
+      </Principal>
+      <Dependent Role="StockTakeLineItem">
+        <PropertyRef Name="SampleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeLineItem_StockTake">
+    <End Role="StockTake" Type="WahlModel.Store.StockTake" Multiplicity="1" />
+    <End Role="StockTakeLineItem" Type="WahlModel.Store.StockTakeLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StockTake">
+        <PropertyRef Name="StockTakeID" />
+      </Principal>
+      <Dependent Role="StockTakeLineItem">
+        <PropertyRef Name="StockTakeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_Alloy">
+    <End Role="Alloy" Type="WahlModel.Store.Alloy" Multiplicity="0..1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.Store.StockTakeVarianceLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alloy">
+        <PropertyRef Name="AlloyID" />
+      </Principal>
+      <Dependent Role="StockTakeVarianceLineItem">
+        <PropertyRef Name="AlloyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_Casting">
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="0..1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.Store.StockTakeVarianceLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casting">
+        <PropertyRef Name="CastingID" />
+      </Principal>
+      <Dependent Role="StockTakeVarianceLineItem">
+        <PropertyRef Name="CastingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_Die">
+    <End Role="Die" Type="WahlModel.Store.Die" Multiplicity="0..1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.Store.StockTakeVarianceLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Die">
+        <PropertyRef Name="DieID" />
+      </Principal>
+      <Dependent Role="StockTakeVarianceLineItem">
+        <PropertyRef Name="DieID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_Sample">
+    <End Role="Sample" Type="WahlModel.Store.Sample" Multiplicity="0..1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.Store.StockTakeVarianceLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sample">
+        <PropertyRef Name="SampleID" />
+      </Principal>
+      <Dependent Role="StockTakeVarianceLineItem">
+        <PropertyRef Name="SampleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StockTakeVarianceLineItem_StockTake">
+    <End Role="StockTake" Type="WahlModel.Store.StockTake" Multiplicity="1" />
+    <End Role="StockTakeVarianceLineItem" Type="WahlModel.Store.StockTakeVarianceLineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StockTake">
+        <PropertyRef Name="StockTakeID" />
+      </Principal>
+      <Dependent Role="StockTakeVarianceLineItem">
+        <PropertyRef Name="StockTakeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Roles">
+    <End Role="Roles" Type="WahlModel.Store.Roles" Multiplicity="1" />
+    <End Role="User" Type="WahlModel.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WeeklyPlan_Casting">
+    <End Role="Casting" Type="WahlModel.Store.Casting" Multiplicity="0..1" />
+    <End Role="WeeklyPlan" Type="WahlModel.Store.WeeklyPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casting">
+        <PropertyRef Name="CastingID" />
+      </Principal>
+      <Dependent Role="WeeklyPlan">
+        <PropertyRef Name="CastingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WeeklyPlan_Company">
+    <End Role="Company" Type="WahlModel.Store.Company" Multiplicity="0..1" />
+    <End Role="WeeklyPlan" Type="WahlModel.Store.WeeklyPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="WeeklyPlan">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WeeklyPlan_PurchaseOrder">
+    <End Role="PurchaseOrder" Type="WahlModel.Store.PurchaseOrder" Multiplicity="0..1" />
+    <End Role="WeeklyPlan" Type="WahlModel.Store.WeeklyPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrder">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Principal>
+      <Dependent Role="WeeklyPlan">
+        <PropertyRef Name="PurchaseOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

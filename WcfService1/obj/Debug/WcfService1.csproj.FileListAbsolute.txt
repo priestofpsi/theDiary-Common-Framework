@@ -1,0 +1,61 @@
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\WcfService1.dll
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\WcfService1.pdb
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\EntityFramework.dll
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Microsoft.Data.Edm.dll
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Microsoft.Data.OData.dll
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Microsoft.Data.Services.Client.dll
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Microsoft.Data.Services.dll
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\System.Spatial.dll
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\EntityFramework.xml
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Microsoft.Data.Edm.xml
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Microsoft.Data.OData.xml
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Microsoft.Data.Services.xml
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Microsoft.Data.Services.Client.xml
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\System.Spatial.xml
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\obj\Debug\WcfService1.dll
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\obj\Debug\WcfService1.pdb
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Seth.System.dll
+C:\Development\DotNot\Projects\Iterative\Framework\Seth Consultiing Framework\common-development-framework\WcfService1\bin\Seth.System.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\WcfService1.dll.config
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\WcfService1.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\WcfService1.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\EntityFramework.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Edm.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.OData.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Services.Client.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Services.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\System.Spatial.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\theDiary.System.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\theDiary.System.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\EntityFramework.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Edm.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.OData.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Services.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Services.Client.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\bin\System.Spatial.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\obj\Debug\WcfService1.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\WcfService1\obj\Debug\WcfService1.pdb
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\WcfService1.dll.config
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\WcfService1.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\WcfService1.pdb
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\EntityFramework.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Edm.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.OData.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Services.Client.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Services.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\System.Spatial.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\theDiary.System.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\theDiary.System.pdb
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\EntityFramework.xml
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Edm.xml
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.OData.xml
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Services.xml
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\Microsoft.Data.Services.Client.xml
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\System.Spatial.xml
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\obj\Debug\WcfService1.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\obj\Debug\WcfService1.pdb
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\bin\theDiary.System.dll.config
+C:\Development\DotNet\Projects\theDiary Software\Framework\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache

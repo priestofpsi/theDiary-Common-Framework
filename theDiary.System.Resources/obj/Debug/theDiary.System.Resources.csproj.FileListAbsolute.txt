@@ -1,0 +1,17 @@
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Debug\theDiary.System.Resources.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Debug\theDiary.System.Resources.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Debug\theDiary.System.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Debug\theDiary.System.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Debug\theDiary.System.Resources.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Debug\theDiary.System.Resources.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Debug\theDiary.System.Resources.pdb
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Debug\theDiary.System.Resources.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Debug\theDiary.System.Resources.pdb
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Debug\theDiary.System.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Debug\theDiary.System.pdb
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\bin\Debug\theDiary.System.dll.config
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Debug\theDiary.System.Resources.csprojAssemblyReference.cache
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Debug\theDiary.System.Resources.csproj.CoreCompileInputs.cache
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Debug\theDiary.System.Resources.csproj.CopyComplete
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Debug\theDiary.System.Resources.dll
+C:\Development\DotNet\Projects\theDiary Software\Framework\theDiary.System.Resources\obj\Debug\theDiary.System.Resources.pdb

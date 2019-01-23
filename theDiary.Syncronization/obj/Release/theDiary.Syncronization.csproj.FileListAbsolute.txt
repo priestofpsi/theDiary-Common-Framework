@@ -1,0 +1,20 @@
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\bin\Release\Seth.Syncronization.dll.config
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\bin\Release\Seth.Syncronization.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\bin\Release\Seth.Syncronization.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\bin\Release\EntityFramework.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\bin\Release\Seth.System.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\bin\Release\Seth.System.pdb
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\bin\Release\EntityFramework.xml
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\obj\Release\theDiary.Syncronization.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\obj\Release\Seth.Syncronization.dll
+C:\Development\DotNot\Projects\Personal\Framework\theDiary.Syncronization\obj\Release\Seth.Syncronization.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\bin\Release\Seth.Syncronization.dll.config
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\bin\Release\Seth.Syncronization.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\bin\Release\Seth.Syncronization.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\bin\Release\EntityFramework.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\bin\Release\theDiary.System.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\bin\Release\theDiary.System.pdb
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\bin\Release\EntityFramework.xml
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\obj\Release\theDiary.Syncronization.csprojResolveAssemblyReference.cache
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\obj\Release\Seth.Syncronization.dll
+C:\Development\DotNot\Projects\theDiary Software\Framework\theDiary.Syncronization\obj\Release\Seth.Syncronization.pdb
